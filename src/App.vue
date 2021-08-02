@@ -1,60 +1,33 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+    <header-component>
+     
+    </header-component>
+    <router-view/>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import HeaderComponent from "@/components/HeaderComponent.vue"
 
 export default {
-  name: 'App',
-
   components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-};
+    "header-component": HeaderComponent
+  }
+}
 </script>
+
+<style lang="scss">
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  background: no-repeat center;
+  background-image: url("https://abglt.org.br/wp-content/uploads/2020/10/wallpaper-pc1-scaled.jpg");
+}
+
+
+</style>
