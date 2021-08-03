@@ -1,5 +1,6 @@
 <template>
   <div>
+    <header-component :isWhite="false" color="#C9C9C9" textColor="#2A2A2A"></header-component>
     <v-form>
       <v-file-input v-model="image" label="Imagem"></v-file-input>
       <v-text-field v-model="title" label="Título"></v-text-field>

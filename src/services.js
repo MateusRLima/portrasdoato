@@ -13,3 +13,5 @@ export const apiCreateNews = data => api().post("/news/create", data, {
 		"Content-Type" : "multipart/form-data",
 	}
 })
+
+export const apiListNews = () => api().get("/news")
