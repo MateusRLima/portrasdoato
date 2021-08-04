@@ -3,7 +3,7 @@
     <header>
     <header-component></header-component>
     </header>
-    <main class="mt-16">
+    <main class="mt-auto">
       <v-card>
         a
       </v-card>
