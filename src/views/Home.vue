@@ -1,36 +1,39 @@
 <template>
   <div class="home">
+    <header>
     <header-component></header-component>
-    <v-slide-group
-      v-model="model"
-      class="pa-4"
-      active-class="success"
-      show-arrows
-    >
-      <v-slide-item
-        v-for="n in 15"
-        :key="n"
-        v-slot="{ active, toggle }"
-      >
-        <v-card
-          :color="active ? undefined : 'grey lighten-1'"
-          class="ma-4"
-          height="200"
-          width="100"
-          @click="toggle"
-        >
-        </v-card>
-        
-      </v-slide-item>
-    </v-slide-group>
+    </header>
+    <main class="mt-16">
+      <v-card>
+        a
+      </v-card>
+    </main>
   </div>
 </template>
 
 <script>
 
-export default {
-  name: 'Home',
+import { apiListNews } from "../services"
 
+export default {
+  name: "Home",
+
+  data: () => ({
+    model: null,
+  }),
+
+  mounted(){
+    apiListNews()
+    .then(res => {
+      console.log(res)
+    })
+  },
+
+  methods: {
+    goToTheNews(){
+
+    }
+  }
 
 
 }

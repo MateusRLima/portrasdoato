@@ -13,6 +13,30 @@
       <v-text-field v-model="fonts" label="Fonte"></v-text-field>
       <v-btn @click="createNews()">Submit</v-btn>
     </v-form>
+    <v-form>
+      <v-file-input v-model="image" label="Imagem"></v-file-input>
+      <v-text-field v-model="title" label="Título"></v-text-field>
+      <v-text-field v-model="subtitle" label="Subtítulo"></v-text-field>
+      <v-text-field v-model="author" label="Autores"></v-text-field>
+      <v-textarea v-model="newsDescription" label="Descrição da Notícia"></v-textarea>
+      <v-checkbox v-model="isMainNews" label="É a notícia principal ?"></v-checkbox>
+      <v-select v-model="selectedFormat" :items="format" label="Formato"></v-select>
+      <v-text-field v-model="theme" label="Tema"></v-text-field>
+      <v-text-field v-model="fonts" label="Fonte"></v-text-field>
+      <v-btn @click="createNews()">Submit</v-btn>
+    </v-form>
+    <v-form>
+      <v-file-input v-model="image" label="Imagem"></v-file-input>
+      <v-text-field v-model="title" label="Título"></v-text-field>
+      <v-text-field v-model="subtitle" label="Subtítulo"></v-text-field>
+      <v-text-field v-model="author" label="Autores"></v-text-field>
+      <v-textarea v-model="newsDescription" label="Descrição da Notícia"></v-textarea>
+      <v-checkbox v-model="isMainNews" label="É a notícia principal ?"></v-checkbox>
+      <v-select v-model="selectedFormat" :items="format" label="Formato"></v-select>
+      <v-text-field v-model="theme" label="Tema"></v-text-field>
+      <v-text-field v-model="fonts" label="Fonte"></v-text-field>
+      <v-btn @click="createNews()">Submit</v-btn>
+    </v-form>
   </div>
 </template>
 

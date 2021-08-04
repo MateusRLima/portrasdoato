@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-var url = "https://66aa8a34c660.ngrok.io"
+var url = "https://fathomless-brook-49795.herokuapp.com"
 
 const api = () => 
 	axios.create({
