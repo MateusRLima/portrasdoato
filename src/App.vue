@@ -21,8 +21,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background: no-repeat center;
-  background-image: url("https://abglt.org.br/wp-content/uploads/2020/10/wallpaper-pc1-scaled.jpg");
+  background: #EBEBEB;
 }
 
 

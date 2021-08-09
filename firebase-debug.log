@@ -1,0 +1,73 @@
+[debug] [2021-08-09T15:06:28.700Z] ----------------------------------------------------------------------
+[debug] [2021-08-09T15:06:28.703Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-09T15:06:28.704Z] CLI Version:   9.16.0
+[debug] [2021-08-09T15:06:28.704Z] Platform:      win32
+[debug] [2021-08-09T15:06:28.704Z] Node Version:  v16.1.0
+[debug] [2021-08-09T15:06:28.705Z] Time:          Mon Aug 09 2021 12:06:28 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-08-09T15:06:28.706Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-09T15:06:28.715Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-09T15:06:28.715Z] > authorizing via signed-in user (mateusrlima@uis.pe.senac.br)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\mateu\Documents\Projetos\tcc
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-08-09T15:06:56.177Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-09T15:06:56.177Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-09T15:06:56.757Z] <<< HTTP RESPONSE 200 {"date":"Mon, 09 Aug 2021 15:06:58 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-09T15:06:56.775Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"portrasdoato","name":"portrasdoato"}
+[debug] [2021-08-09T15:06:58.993Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 09 Aug 2021 15:07:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=927","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-09T15:06:58.996Z] > refreshing access token with scopes: []
+[debug] [2021-08-09T15:06:58.996Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-09T15:06:59.401Z] <<< HTTP RESPONSE 200 {"date":"Mon, 09 Aug 2021 15:07:01 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-09T15:06:59.411Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6760656151830397238 [none]
+[debug] [2021-08-09T15:07:00.766Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6760656151830397238 200
+[debug] [2021-08-09T15:07:00.766Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6760656151830397238 {"name":"operations/cp.6760656151830397238"}
+[debug] [2021-08-09T15:07:01.275Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-08-09T15:07:01.276Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6760656151830397238 [none]
+[debug] [2021-08-09T15:07:02.639Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6760656151830397238 200
+[debug] [2021-08-09T15:07:02.639Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6760656151830397238 {"name":"operations/cp.6760656151830397238","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"886749290749","projectId":"portrasdoato","lifecycleState":"ACTIVE","name":"portrasdoato","createTime":"2021-08-09T15:07:00.920Z","parent":{"type":"organization","id":"383096636449"}}}
+[debug] [2021-08-09T15:07:02.642Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-09T15:07:02.642Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-09T15:07:03.155Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 09 Aug 2021 15:07:05 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-09T15:07:03.169Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/portrasdoato:addFirebase  
+ 
+[debug] [2021-08-09T15:07:04.670Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 09 Aug 2021 15:07:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-09T15:07:04.670Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-08-09T15:07:04.672Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-08-09T15:07:05.044Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\mateu\AppData\Roaming\nvm\v16.1.0\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\mateu\AppData\Roaming\nvm\v16.1.0\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\mateu\AppData\Roaming\nvm\v16.1.0\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:365:28)
+    at Request.emit (node:domain:470:12)
+    at Request.<anonymous> (C:\Users\mateu\AppData\Roaming\nvm\v16.1.0\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:365:28)
+    at Request.emit (node:domain:470:12)
+    at IncomingMessage.<anonymous> (C:\Users\mateu\AppData\Roaming\nvm\v16.1.0\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:471:28)
+    at IncomingMessage.emit (node:events:377:35)
+    at IncomingMessage.emit (node:domain:470:12)
+    at endReadableNT (node:internal/streams/readable:1312:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.

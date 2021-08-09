@@ -39,12 +39,12 @@ export default {
       type: String,
     },
     isWhite: {
-      required: true,
+      required: false,
       default: true,
       type: Boolean,
     },
     textColor: {
-      required: true,
+      required: false,
       default: "#FBFBFB",
       type: String,
     }
@@ -61,7 +61,7 @@ export default {
 <style>
   .header {
     border-bottom: 1px solid #858585;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
   }
 

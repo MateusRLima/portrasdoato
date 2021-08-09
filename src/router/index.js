@@ -14,11 +14,17 @@ const routes = [
     name: 'About',
     component: () => import('../views/About.vue')
   },
+  // {
+  //   path: '/news',
+  //   name: 'News',
+  //   component: () => import('../views/News.vue')
+  // },
   {
     path: '/news',
-    name: 'News',
-    component: () => import('../views/News.vue')
+    name: 'ViolenceView',
+    component: () => import('../views/ViolenceView.vue')
   }
+  
 ]
 
 const router = new VueRouter({
