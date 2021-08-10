@@ -33,6 +33,12 @@ const routes = [
     name: 'ProtestView',
     component: () => import('../views/ProtestView.vue')
   },
+
+  {
+    path: '/snews',
+    name: 'StreetFacesView',
+    component: () => import('../views/StreetFacesView.vue')
+  },
   
 ]
 

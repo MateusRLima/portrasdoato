@@ -9,10 +9,8 @@
     <main class="mt-16">
       <v-container class="authors-sheet">
         <v-row class="authors-content">
-          <v-col cols="4">
-            <img class="img-thumbnail" src="../assets/Flávia.jpeg" width="50%" />
-          </v-col>
-          <v-col cols="8">
+          <v-col>
+            <img class="rounded-circle perfil mb-10" src="../assets/Flávia.jpeg" width="150px" height="150px" />
             <h3 class="mb-10">Flávia Castro</h3>
             <p>
               Agradeço a Deus por, literalmente, TUDO. Agradeço a meus familiares
@@ -27,10 +25,8 @@
           </v-col>
         </v-row>
         <v-row class="mt-10 authors-content ">
-          <v-col cols="4">
-            <img class="img-thumbnail" src="../assets/Débora.jpeg" width="50%" />
-          </v-col>
-          <v-col cols="8">
+          <v-col>
+            <img class="rounded-circle perfil mb-10" src="../assets/Débora.jpeg"  width="150px" height="150px" />
             <h3 class="mb-10">Débora Oliveira</h3>
             <p>
               Agradeço a minha mãe e irmã pelas madrugadas que suportaram a luz do
@@ -89,5 +85,10 @@ export default {};
 		text-align: justify;
 		padding: 1rem 15rem;
 	}
+  
+  .perfil{
+    object-fit: cover;
+    object-position: top;
+  }
 }
 </style>

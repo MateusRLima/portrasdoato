@@ -55,7 +55,30 @@
                         <h4 class="news-list-subtitle mb-5">
                           Entenda seus direitos como manifestante e saiba o que recomendam os manuais de ‘conduta’ existentes 
                         </h4>
-                        <v-btn text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
+                        <v-btn @click="goToPnews()" text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
+                      </v-col>
+                    </v-row>
+                  </v-container>
+                </v-card>
+              </v-slide-item>
+              <v-slide-item
+                light
+              >
+                <v-card
+                  @click="goToSnews()"
+                  height="20rem"
+                  width="35rem"
+                  tile
+                  color="#FCFCFC"
+                  class="ma-4 pa-4"
+                >
+                  <v-container>
+                    <v-row>
+                      <v-col>
+                        <h3 class="news-list-title mb-10">
+                          Rostos da rua
+                        </h3>
+                        <v-btn @click="goToSnews()" text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
                       </v-col>
                     </v-row>
                   </v-container>
@@ -87,6 +110,10 @@ export default {
 
     goToVnews(){
       this.$router.push("/vnews")
+    },
+
+    goToSnews(){
+      this.$router.push("/snews")
     }
   }
 

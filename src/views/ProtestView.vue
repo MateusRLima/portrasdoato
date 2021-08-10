@@ -8,16 +8,16 @@
     ></header-component>
     <main class="mt-16">
       <img
-        class="news-banner"
-        src="https://storage.googleapis.com/news-storage-ea132.appspot.com/images/1628175900171.png"
+        class="pnews-banner"
+        src="../assets/materia4.jpg"
       />
-      <v-container class="pt-0 news-sheet">
+      <v-container class="pt-0 pnews-sheet">
         <v-row>
           <v-col>
-            <div class="news-title">
+            <div class="pnews-title">
               <h1>Sem oxigênio</h1>
             </div>
-            <div class="news-subtitle">
+            <div class="pnews-subtitle">
               <h2>
                 Um olhar sobre registros da última década que mostram como o
                 poder judiciário, a polícia e a mídia têm sido utilizados para
@@ -26,7 +26,7 @@
             </div>
           </v-col>
           <v-col>
-            <div class="news-tags">
+            <div class="pnews-tags">
               <p>Autores: Débora Oliveira</p>
               <!-- <v-chip color="#616161" label class="mr-4">
                 <p class="ma-0 white--text">Alô</p>
@@ -37,7 +37,7 @@
             </div>
           </v-col>
         </v-row>
-        <div class="news-content mt-10">
+        <div class="pnews-content mt-10">
           <p>
             O que posso fazer como manifestante? Quando posso ou não ser
             revistado? Um policial pode me prender ou agredir? O que devo levar
@@ -130,7 +130,7 @@
             </v-card>
           </v-carousel-item>
         </v-carousel>
-        <div class="news-content mt-10">
+        <div class="pnews-content mt-10">
           <p>
             Mas é importante dizer: o protesto é um espaço social como qualquer
             outro, onde as dispositivos penais também podem ser aplicados no
@@ -588,79 +588,21 @@
 </template>
 
 <script>
-!(function () {
-  "use strict";
-  window.addEventListener("message", function (e) {
-    if (void 0 !== e.data["datawrapper-height"]) {
-      var t = document.querySelectorAll("iframe");
-      for (var a in e.data["datawrapper-height"])
-        for (var r = 0; r < t.length; r++) {
-          if (t[r].contentWindow === e.source)
-            t[r].style.height = e.data["datawrapper-height"][a] + "px";
-        }
-    }
-  });
-})();
-
-import { apiCreateNews } from "../services";
 
 export default {
   name: "ProtestView",
-
-  data: () => ({
-    title: "",
-    subtitle: "",
-    image: null,
-    author: "",
-    isMainNews: false,
-    format: ["Dados", "Perfil", "Reportagem", "Expresso"],
-    theme: "",
-    tags: {},
-    selectedFormat: "",
-    newsDescription: "",
-    fonts: "",
-  }),
-
-  methods: {
-    getFormData(object) {
-      const formData = new FormData();
-      Object.keys(object).forEach((key) => formData.append(key, object[key]));
-      return formData;
-    },
-
-    createNews() {
-      this.tags.format = this.selectedFormat;
-      this.tags.theme = this.theme;
-
-      let data = new FormData();
-
-      data.append("title", this.title);
-      data.append("subtitle", this.subtitle);
-      data.append("image", this.image);
-      data.append("author", this.author);
-      data.append("is_main_news", this.isMainNews);
-      Object.keys(this.tags).forEach((key) => data.append(key, this.tags[key]));
-      data.append("news", this.newsDescription);
-      data.append("fonts", this.fonts);
-
-      apiCreateNews(data).then((response) => {
-        alert(response);
-      });
-    },
-  },
 };
+
 </script>
 
 <style >
-.news-sheet {
-  /* padding: 15rem; */
+.pnews-sheet {
   background-color: #f8f8f8;
 }
 
-.news-title {
+.pnews-title {
   text-align: left;
   padding: 1rem;
-  /* width: 30rem; */
   color: #2a2a2a;
   font: 1rem "Libre Baskerville", serif;
   background: #f8f50d;
@@ -670,7 +612,7 @@ export default {
   z-index: 1;
 }
 
-.news-banner {
+.pnews-banner {
   width: 100%;
   height: 25rem;
   object-fit: cover;
@@ -678,23 +620,23 @@ export default {
   z-index: 0;
 }
 
-.news-subtitle {
+.pnews-subtitle {
   text-align: justify;
   color: #616161;
   font: 0.8rem "Open Sans", sans-serif;
 }
 
-.news-tags {
+.pnews-tags {
   margin-top: 5rem;
   color: #616161;
   font: 1.2rem "Open Sans", sans-serif;
 }
 
-.news-tags h3 {
+.pnews-tags h3 {
   margin-bottom: 5rem;
 }
 
-.news-content {
+.pnews-content {
   text-align: justify;
   color: #616161;
   font: 1rem "Open Sans", sans-serif;
@@ -724,12 +666,12 @@ export default {
 }
 
 @media only screen and (min-width: 768px) {
-  .news-sheet {
+  .pnews-sheet {
     padding: 15rem;
     background-color: #f8f8f8;
   }
 
-  .news-banner {
+  .pnews-banner {
     width: 100%;
     height: 25rem;
     object-fit: cover;
@@ -737,7 +679,7 @@ export default {
     z-index: 0;
   }
 
-  .news-title {
+  .pnews-title {
     text-align: left;
     padding: 1rem;
     width: 30rem;
@@ -750,23 +692,23 @@ export default {
     z-index: 1;
   }
 
-  .news-subtitle {
+  .pnews-subtitle {
     text-align: justify;
     color: #616161;
     font: 0.8rem "Open Sans", sans-serif;
   }
 
-  .news-tags {
+  .pnews-tags {
     margin-top: 5rem;
     color: #616161;
     font: 1.2rem "Open Sans", sans-serif;
   }
 
-  .news-tags h3 {
+  .pnews-tags h3 {
     margin-bottom: 5rem;
   }
 
-  .news-content {
+  .pnews-content {
     text-align: justify;
     color: #616161;
     font: 1rem "Open Sans", sans-serif;
