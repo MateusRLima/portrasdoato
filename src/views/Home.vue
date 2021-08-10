@@ -9,7 +9,7 @@
           <v-row>
             <v-col cols="8" align-self="center">
               <h1 class="principal-title">
-                Trabalhadores no ponto, criminosos nas ruas
+                Trabalhadores no ponto,<br /> criminosos nas ruas
               </h1>
               <h2 class="principal-subtitle">
                 Um olhar sobre registros da última década que mostram como o poder judiciário,
@@ -17,14 +17,13 @@
               </h2>
             </v-col>
             <v-col align-self="end" cols="1">
-              <v-btn @click="goToVnews()" text color="#C4C4C4">Ver mais <v-icon color="#F8F50D">mdi-chevron-right</v-icon></v-btn>
+              <v-btn  class="px-0" @click="goToVnews()" text color="#C4C4C4">Ver mais <v-icon color="#F8F50D">mdi-chevron-right</v-icon></v-btn>
             </v-col>
           </v-row>
-          <v-row class="py-0">
+          <v-row class="slide py-0">
             <v-slide-group
               class="px-0 py-4"
               active-class="success"
-              show-arrows
             >
               <template #next>
                 <v-icon color="#F8F50D">
@@ -100,7 +99,7 @@ export default {
   
   .home{
     height: 100%;
-    background: url('https://storage.googleapis.com/news-storage-ea132.appspot.com/images/1628175900171.png') no-repeat center center fixed;
+    background: url('../assets/materia1.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -143,10 +142,14 @@ export default {
     border-radius: 3px;
   }
 
+  .slide{
+    width: 75%;
+  }
+
   @media only screen and (min-width: 768px) {
     .home{
       height: 100%;
-      background: url('https://storage.googleapis.com/news-storage-ea132.appspot.com/images/1628175900171.png') no-repeat center center fixed;
+      background: url('../assets/materia1.png') no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;

@@ -7,7 +7,7 @@
       <img @click="goToHome()" v-if="!isWhite" src="../assets/logo.svg" class="logo-header">
       <img @click="goToHome()" v-else src="../assets/logo-white.svg" class="logo-header">
       <v-spacer></v-spacer>
-      <!-- <router-link id="router-link" :style="{color: textColor}" to="/about">Sobre o projeto</router-link> -->
+      <router-link id="router-link" :style="{color: textColor}" to="/about">Sobre o projeto</router-link>
       <router-link id="router-link" :style="{color: textColor}" to="/authors">Autoras</router-link>
       <v-spacer></v-spacer>
     </v-toolbar>

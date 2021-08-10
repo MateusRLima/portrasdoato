@@ -9,7 +9,7 @@
     <main class="mt-16">
       <img
         class="news-banner"
-        src="https://storage.googleapis.com/news-storage-ea132.appspot.com/images/1628175900171.png"
+        src="../assets/materia1.png"
       />
       <v-container class="pt-0 news-sheet">
         <v-row>
@@ -52,7 +52,7 @@
         </div>
         <v-carousel
           cycle
-          height="250"
+          height="100%"
           class="my-10"
           :show-arrows="false"
           hide-delimiter-background
@@ -62,7 +62,7 @@
           <v-carousel-item>
             <v-card flat height="100%" color="#EBEBEB">
               <v-card-title> Entenda: </v-card-title>
-              <v-card-text class="text-justify">
+              <v-card-text class="text-justify mb-10">
                 <p class="carousel-text">
                   No Brasil, o DIREITO AO PROTESTO é garantido pela Constituição
                   por meio de três leis: a liberdade de expressão, a liberdade
@@ -79,7 +79,7 @@
           <v-carousel-item>
             <v-card flat height="100%" color="#EBEBEB">
               <v-card-title> O que é o protesto? </v-card-title>
-              <v-card-text class="text-justify">
+              <v-card-text class="text-justify mb-10">
                 <p class="carousel-text">
                   Ato coletivo em que pessoas se reúnem publicamente para
                   expressar uma opinião pública. Uma reação solitária ou em
@@ -96,7 +96,7 @@
                 CRIMINALIZAR: considerar crime, definir ato como crime, tornar
                 criminal.
               </v-card-title>
-              <v-card-text class="text-justify">
+              <v-card-text class="text-justify mb-10">
                 <p class="carousel-text">
                   Os crimes são definidos pelo Poder Legislativo. Depois,
                   aplicados pelas instituições de controle social: a Polícia, o
@@ -307,7 +307,7 @@
           </p>
           <v-carousel
             cycle
-            height="250"
+            height="100%"
             class="my-10"
             :show-arrows="false"
             hide-delimiter-background
@@ -319,7 +319,7 @@
                 <v-card-title>
                   Por que os trabalhadores fazem greve?
                 </v-card-title>
-                <v-card-text class="text-justify carousel-text">
+                <v-card-text class="text-justify carousel-text mb-10">
                   <p class="carousel-text">
                     As Greves hoje são regulamentadas pela Lei 7783 de 1989,
                     conhecida como Lei da Greve. Segundo ela, os trabalhadores
@@ -334,7 +334,7 @@
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
                 <v-card-title> O que são greves abusivas? </v-card-title>
-                <v-card-text class="text-justify carousel-text">
+                <v-card-text class="text-justify carousel-text mb-10">
                   <p class="carousel-text">
                     A greve é legítima quando seus motivos são relacionados a o
                     espectro do trabalho, ou seja, é por reajuste de salários,
@@ -353,7 +353,7 @@
                 <v-card-title>
                   Quantos % do efetivo deve funcionar em uma greve?
                 </v-card-title>
-                <v-card-text class="text-justify">
+                <v-card-text class="text-justify carousel-text mb-10">
                   <p class="carousel-text">
                     Depende de cada caso. Segundo a Lei, em serviços essenciais,
                     metade dos trabalhadores devem estar ativos, mas isso varia
@@ -637,18 +637,20 @@
           <v-card flat class="my-10">
             <v-card-text>
               <v-container>
-                <v-row class="manchete" >
-                  <img class="content-manchete img-fluid"  src="../assets/manchete/1.png">
-                  <img class="content-manchete1 img-fluid" src="../assets/manchete/2.png">
-                  <img class="content-manchete img-fluid"  src="../assets/manchete/3.jpg">
-                  <img class="content-manchete1 img-fluid"  src="../assets/manchete/4.jpg">
-                  <img class="content-manchete img-fluid"  src="../assets/manchete/5.jpg">
-                  <img class="content-manchete1 img-fluid"  src="../assets/manchete/6.png">
-                  <img class="content-manchete img-fluid"  src="../assets/manchete/7.jpg">
-                  <img class="content-manchete1 img-fluid"  src="../assets/manchete/8.png">
-                  <img class="content-manchete img-fluid"  src="../assets/manchete/9.png">
-                  <img class="content-manchete1 img-fluid" src="../assets/manchete/10.png">
-                  <img class="content-manchete img-fluid" src="../assets/manchete/11.png">
+                <v-row>
+                  <v-col class="manchete">
+                    <img class="content-manchete img-fluid"  src="../assets/manchete/1.png">
+                    <img class="content-manchete img-fluid" src="../assets/manchete/2.png">
+                    <img class="content-manchete img-fluid"  src="../assets/manchete/3.jpg">
+                    <img class="content-manchete img-fluid"  src="../assets/manchete/4.jpg">
+                    <img class="content-manchete img-fluid"  src="../assets/manchete/5.jpg">
+                    <img class="content-manchete img-fluid"  src="../assets/manchete/6.png">
+                    <img class="content-manchete img-fluid"  src="../assets/manchete/7.jpg">
+                    <img class="content-manchete img-fluid"  src="../assets/manchete/8.png">
+                    <img class="content-manchete img-fluid"  src="../assets/manchete/9.png">
+                    <img class="content-manchete img-fluid" src="../assets/manchete/10.png">
+                    <img class="content-manchete img-fluid" src="../assets/manchete/11.png">
+                  </v-col>
                 </v-row>
               </v-container>
             </v-card-text>
@@ -958,6 +960,7 @@ export default {
     margin-bottom: 5rem
 
 .news-content
+  padding: 0 2rem
   text-align: justify
   color: #616161
   font: 1rem "Open Sans", sans-serif
@@ -966,17 +969,15 @@ export default {
   color: #616161
   text-align: justify
 
-.content-manchete
-  max-width: 100%
-  height: auto
-  -webkit-animation: fade 5s infinite linear
-  animation: fade 5s infinite linear
+.manchete
+  display: flex
+  flex-direction: column
+  justify-content: center
 
-.content-manchete1
+.content-manchete
+  margin: 2rem 0
   max-width: 100%
   height: auto
-  -webkit-animation: fade 5s 10s infinite linear
-  animation: fade 5s 10s infinite linear 
 
 @keyframes fade
   0%,
@@ -988,7 +989,6 @@ export default {
 
 @media only screen and (min-width: 768px)
   .news-sheet
-    padding: 15rem
     background-color: #f8f8f8
 
   .news-banner
@@ -1001,7 +1001,6 @@ export default {
   .news-title
     text-align: left
     padding: 1rem
-    width: 30rem
     color: #2a2a2a
     font: 1rem "Libre Baskerville", serif
     background: #f8f50d
@@ -1038,14 +1037,6 @@ export default {
   .content-manchete
     max-width: 100%
     height: auto
-    -webkit-animation: fade 5s infinite linear
-    animation: fade 5s infinite linear
-
-  .content-manchete1
-    max-width: 100%
-    height: auto
-    -webkit-animation: fade 5s 10s infinite linear
-    animation: fade 5s 10s infinite linear
 
   @keyframes fade
     0%,
