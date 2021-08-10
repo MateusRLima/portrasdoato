@@ -31,6 +31,7 @@
           <p>
             Resgatamos a história de quatro deles, residentes de cidades diferentes, profissões diferentes e realidades completamente distintas. A única coisa que eles têm em comum é a repressão que sofreram enquanto tentavam lutar pela sua dignidade.
           </p>
+          
           <h2 class="content-subtitle my-10">
             Quais os direitos de quem protesta?
           </h2>

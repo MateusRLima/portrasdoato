@@ -39,32 +39,6 @@
                 light
               >
                 <v-card
-                  @click="goToPnews()"
-                  height="20rem"
-                  width="35rem"
-                  tile
-                  color="#FCFCFC"
-                  class="ma-4 pa-4"
-                >
-                  <v-container>
-                    <v-row>
-                      <v-col>
-                        <h3 class="news-list-title">
-                          Protesto: o que é permitido por lei?
-                        </h3>
-                        <h4 class="news-list-subtitle mb-5">
-                          Entenda seus direitos como manifestante e saiba o que recomendam os manuais de ‘conduta’ existentes 
-                        </h4>
-                        <v-btn @click="goToPnews()" text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
-                      </v-col>
-                    </v-row>
-                  </v-container>
-                </v-card>
-              </v-slide-item>
-              <v-slide-item
-                light
-              >
-                <v-card
                   @click="goToSnews()"
                   height="20rem"
                   width="35rem"
@@ -72,16 +46,55 @@
                   color="#FCFCFC"
                   class="ma-4 pa-4"
                 >
-                  <v-container>
+                <v-card-text class="pa-0">
+                  <v-container class="pa-0" >
                     <v-row>
-                      <v-col>
+                      <v-col cols="8" class="pb-0">
                         <h3 class="news-list-title mb-10">
                           Rostos da rua
                         </h3>
+                        <h4 class="news-list-subtitle mb-5">
+                          Em outubro de 2013, o fotógrafo Fernando Frazão, da Agência Brasil, capturou a manifestação simbólica de duas mulheres... 
+                        </h4>
                         <v-btn @click="goToSnews()" text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
+                      </v-col>
+                      <v-col cols="4" class="pb-0">
+                        <img class="news-image" src="../assets/materia2.jpg">
                       </v-col>
                     </v-row>
                   </v-container>
+                </v-card-text>
+                </v-card>
+              </v-slide-item>
+              <v-slide-item
+                light
+              >
+                <v-card
+                  @click="goToPnews()"
+                  height="20rem"
+                  width="35rem"
+                  tile
+                  color="#FCFCFC"
+                  class="ma-4 pa-4"
+                >
+                <v-card-text class="pa-0">
+                  <v-container class="pa-0">
+                    <v-row>
+                      <v-col cols="8">
+                        <h3 class="news-list-title mb-10">
+                          Protesto: o que é permitido por lei?
+                        </h3>
+                        <h4 class="news-list-subtitle mb-5">
+                          Entenda seus direitos como manifestante e saiba o que recomendam os manuais de ‘conduta’ existentes 
+                        </h4>
+                        <v-btn class="pl-0" @click="goToPnews()" text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
+                      </v-col>
+                      <v-col cols="4">
+                        <img class="news-image" style="object-position: 80% 50%" src="../assets/materia4.jpg">
+                      </v-col>
+                    </v-row>
+                  </v-container>
+                </v-card-text>
                 </v-card>
               </v-slide-item>
             </v-slide-group>
@@ -161,8 +174,10 @@ export default {
   }
 
   .news-image{
-    object-fit: contain;
-    background: no-repeat center center fixed;
+    width: 10rem;
+    height: 18rem;
+    object-fit: cover;
+    object-position: 20% 50%;
   }
 
   .news-time{
@@ -210,8 +225,9 @@ export default {
     }
 
     .news-image{
-      background: no-repeat center center fixed;
-      height: 100%;
+      width: 10rem;
+      height: 18rem;
+      object-fit: cover;
     }
 
     .news-time{
