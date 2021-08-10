@@ -637,18 +637,18 @@
           <v-card flat class="my-10">
             <v-card-text>
               <v-container>
-                <v-row >
-                  <img class="content-manchete"  src="../assets/manchete/1.png">
-                  <img  class="content-manchete" src="../assets/manchete/2.png">
-                  <img class="content-manchete"  src="../assets/manchete/3.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/4.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/5.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/6.png">
-                  <img class="content-manchete"  src="../assets/manchete/7.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/8.png">
-                  <img class="content-manchete"  src="../assets/manchete/9.png">
-                  <img  class="content-manchete" src="../assets/manchete/10.png">
-                  <img  class="content-manchete" src="../assets/manchete/11.png">
+                <v-row class="manchete" >
+                  <img class="content-manchete img-fluid"  src="../assets/manchete/1.png">
+                  <img class="content-manchete1 img-fluid" src="../assets/manchete/2.png">
+                  <img class="content-manchete img-fluid"  src="../assets/manchete/3.jpg">
+                  <img class="content-manchete1 img-fluid"  src="../assets/manchete/4.jpg">
+                  <img class="content-manchete img-fluid"  src="../assets/manchete/5.jpg">
+                  <img class="content-manchete1 img-fluid"  src="../assets/manchete/6.png">
+                  <img class="content-manchete img-fluid"  src="../assets/manchete/7.jpg">
+                  <img class="content-manchete1 img-fluid"  src="../assets/manchete/8.png">
+                  <img class="content-manchete img-fluid"  src="../assets/manchete/9.png">
+                  <img class="content-manchete1 img-fluid" src="../assets/manchete/10.png">
+                  <img class="content-manchete img-fluid" src="../assets/manchete/11.png">
                 </v-row>
               </v-container>
             </v-card-text>
@@ -845,6 +845,7 @@
 </template>
 
 <script>
+
 !(function () {
   "use strict";
   window.addEventListener("message", function (e) {
@@ -878,6 +879,18 @@ export default {
     fonts: "",
   }),
 
+  mounted(){
+    const listImage = document.querySelectorAll(".manchete > .content-manchete")
+    const separator = Math.ceil(Math.random() * 7);
+  
+    listImage.forEach((item, i) => {
+      console.log(item)
+      if ((i + 1) % separator === 0) {
+        item.classList.add('img-animation');
+      }
+    });
+  },
+
   methods: {
     getFormData(object) {
       const formData = new FormData();
@@ -908,144 +921,139 @@ export default {
 };
 </script>
 
-<style >
-  .news-sheet {
-    /* padding: 15rem; */
-    background-color: #f8f8f8;
-    /* text-align: justify; */
-  }
+<style lang="sass">
 
-  .news-title {
-    text-align: left;
-    padding: 1rem;
-    /* width: 30rem; */
-    color: #2a2a2a;
-    font: 1rem "Libre Baskerville", serif;
-    background: #f8f50d;
-    font-weight: bold;
-    position: relative;
-    top: -20%;
-    z-index: 1;
-  }
+.news-sheet
+  background-color: #f8f8f8
 
-  .news-banner {
-    width: 100%;
-    height: 25rem;
-    object-fit: cover;
-    position: relative;
-    z-index: 0;
-  }
+.news-title
+  text-align: left
+  padding: 1rem
+  color: #2a2a2a
+  font: 1rem "Libre Baskerville", serif
+  background: #f8f50d
+  font-weight: bold
+  position: relative
+  top: -20%
+  z-index: 1
 
-  .news-subtitle {
-    text-align: justify;
-    color: #616161;
-    font: 0.8rem "Open Sans", sans-serif;
-  }
+.news-banner
+  width: 100%
+  height: 25rem
+  object-fit: cover
+  position: relative
+  z-index: 0
 
-  .news-tags {
-    margin-top: 5rem;
-    color: #616161;
-    font: 1.2rem "Open Sans", sans-serif;
-  }
+.news-subtitle
+  text-align: justify
+  color: #616161
+  font: 0.8rem "Open Sans", sans-serif
 
-  .news-tags h3 {
-    margin-bottom: 5rem;
-  }
+.news-tags
+  margin-top: 5rem
+  color: #616161
+  font: 1.2rem "Open Sans", sans-serif
 
-  .news-content {
-    text-align: justify;
-    color: #616161;
-    font: 1rem "Open Sans", sans-serif;
-  }
+  h3
+    margin-bottom: 5rem
 
-  .content-subtitle {
-    color: #616161;
-    text-align: justify;
-  }
+.news-content
+  text-align: justify
+  color: #616161
+  font: 1rem "Open Sans", sans-serif
 
-  .content-manchete:nth-child(2n){
-    animation: fade 5s infinite;
-  }
+.content-subtitle
+  color: #616161
+  text-align: justify
 
-  .content-manchete:nth-child(1n){
-    animation: fade 5s infinite;
-  }
+.content-manchete
+  max-width: 100%
+  height: auto
+  -webkit-animation: fade 5s infinite linear
+  animation: fade 5s infinite linear
 
-  
-  @keyframes fade {
+.content-manchete1
+  max-width: 100%
+  height: auto
+  -webkit-animation: fade 5s 10s infinite linear
+  animation: fade 5s 10s infinite linear 
+
+@keyframes fade
+  0%,
+    100%
+    opacity: 0
+
+  50%
+    opacity: 1
+
+@media only screen and (min-width: 768px)
+  .news-sheet
+    padding: 15rem
+    background-color: #f8f8f8
+
+  .news-banner
+    width: 100%
+    height: 25rem
+    object-fit: cover
+    position: relative
+    z-index: 0
+
+  .news-title
+    text-align: left
+    padding: 1rem
+    width: 30rem
+    color: #2a2a2a
+    font: 1rem "Libre Baskerville", serif
+    background: #f8f50d
+    font-weight: bold
+    position: relative
+    top: -20%
+    z-index: 1
+
+  .news-subtitle
+    text-align: justify
+    color: #616161
+    font: 0.8rem "Open Sans", sans-serif
+
+  .news-tags
+    margin-top: 5rem
+    color: #616161
+    font: 1.2rem "Open Sans", sans-serif
+
+    h3
+      margin-bottom: 5rem
+
+  .news-content
+    text-align: justify
+    color: #616161
+    font: 1rem "Open Sans", sans-serif
+
+  .content-subtitle
+    color: #616161
+    text-align: justify
+
+  .carousel-text
+    font-size: 1rem
+
+  .content-manchete
+    max-width: 100%
+    height: auto
+    -webkit-animation: fade 5s infinite linear
+    animation: fade 5s infinite linear
+
+  .content-manchete1
+    max-width: 100%
+    height: auto
+    -webkit-animation: fade 5s 10s infinite linear
+    animation: fade 5s 10s infinite linear
+
+  @keyframes fade
     0%,
-    100% {
-        opacity: 0
-    }
-    50% {
-        opacity: 1
-    }
-  }
+    100%
+      opacity: 0
 
+    50%
+      opacity: 1
 
-
-@media only screen and (min-width: 768px) {
-  .news-sheet {
-    padding: 15rem;
-    background-color: #f8f8f8;
-  }
-
-  .news-banner {
-    width: 100%;
-    height: 25rem;
-    object-fit: cover;
-    position: relative;
-    z-index: 0;
-  }
-
-  .news-title {
-    text-align: left;
-    padding: 1rem;
-    width: 30rem;
-    color: #2a2a2a;
-    font: 1rem "Libre Baskerville", serif;
-    background: #f8f50d;
-    font-weight: bold;
-    position: relative;
-    top: -20%;
-    z-index: 1;
-  }
-
-  .news-subtitle {
-    text-align: justify;
-    color: #616161;
-    font: 0.8rem "Open Sans", sans-serif;
-  }
-
-  .news-tags {
-    margin-top: 5rem;
-    color: #616161;
-    font: 1.2rem "Open Sans", sans-serif;
-  }
-
-  .news-tags h3 {
-    margin-bottom: 5rem;
-  }
-
-  .news-content {
-    text-align: justify;
-    color: #616161;
-    font: 1rem "Open Sans", sans-serif;
-  }
-
-  .content-subtitle {
-    color: #616161;
-    text-align: justify;
-  }
-
-  .content-manchete{
-    position: relative;
-    width: 25%;
-    height: 25%;
-  }
-
-  .carousel-text {
-    font-size: 1rem;
-  }
-}
 </style>
+ 

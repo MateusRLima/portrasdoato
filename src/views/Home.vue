@@ -72,7 +72,7 @@
 
 <script>
 
-import { apiListNews } from "../services"
+// import { apiListNews } from "../services"
 
 export default {
   name: "Home",
@@ -80,13 +80,6 @@ export default {
   data: () => ({
     items: [],
   }),
-
-  mounted(){
-    apiListNews()
-    .then(res => {
-      this.items = res.data.data
-    })
-  },
 
   methods: {
     goToPnews(){
