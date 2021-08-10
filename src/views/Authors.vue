@@ -10,13 +10,33 @@
       <v-container class="authors-sheet">
         <v-row class="authors-content">
           <v-col>
-            <img class="rounded-circle perfil mb-10" src="../assets/Flávia.jpeg" width="150px" height="150px" />
+            <img
+              class="rounded-circle perfil mb-10"
+              src="../assets/Flávia.jpeg"
+              width="150px"
+              height="150px"
+            />
             <h3 class="mb-10">Flávia Castro</h3>
             <p>
-              Agradeço a Deus por, literalmente, TUDO. Agradeço a meus familiares
-              Castros e Ferreiras, em especial a minha mãe, carinhosamente chamada
-              de Emilia, mulher forte, guerreira e que sempre batalhou
-              incansavelmente por mim.
+              Agradeço a Deus por, literalmente, TUDO. Agradeço a meus
+              familiares Castros e Ferreiras, em especial a minha mãe,
+              carinhosamente chamada de Emilia, mulher forte, guerreira e que
+              sempre batalhou incansavelmente por mim.
+            </p>
+            <p>
+              Ao Flávio, meu pai, de quem carrego até o nome, por todo amor,
+              esforço, carinho e mesmo que indiretamente me ensinar a ter calma
+              e paciência. Às minhas irmãs Raysa, Rayane e Eduarda, por sempre
+              vibrarem pelas minhas conquistas. À Débora, minha companheira,
+              amiga e irmã por todos esses anos, por me colocar para cima, me
+              acalmar e ser parceira não só nesse trabalho, mas também na vida.
+              Carlos Neto, a criança que tem meu coração e escuta meus desabafos
+              mesmo sem entender nada. A meus pets, meus filhos. Eles me
+              acalmaram e me acompanharam nas madrugadas. Por fim, um
+              agradecimento importante: Rony Lamonier, meu melhor amigo e meu
+              amor, por me apoiar tanto, corrigir meus textos em todos esses
+              anos, escutar meus desabafos, choros, me acalmar, por acreditar
+              tanto em mim e por tantas outras coisas…
             </p>
             <p>
               Obrigada ao jornalismo que me fez vivenciar momentos únicos e
@@ -24,36 +44,42 @@
             </p>
           </v-col>
         </v-row>
-        <v-row class="mt-10 authors-content ">
+        <v-row class="mt-10 authors-content">
           <v-col>
-            <img class="rounded-circle perfil mb-10" src="../assets/Débora.jpeg"  width="150px" height="150px" />
+            <img
+              class="rounded-circle perfil mb-10"
+              src="../assets/Débora.jpeg"
+              width="150px"
+              height="150px"
+            />
             <h3 class="mb-10">Débora Oliveira</h3>
             <p>
-              Agradeço a minha mãe e irmã pelas madrugadas que suportaram a luz do
-              quarto ligada, pelos pratos que lavaram por mim enquanto eu só sabia
-              dizer que estava ocupada com o TCC; por escutar meu choro. Vocês são
-              meu tudo e nas pequenas coisas me ajudaram a estar de pé.
+              Agradeço a minha mãe e irmã pelas madrugadas que suportaram a luz
+              do quarto ligada, pelos pratos que lavaram por mim enquanto eu só
+              sabia dizer que estava ocupada com o TCC; por escutar meu choro.
+              Vocês são meu tudo e nas pequenas coisas me ajudaram a estar de
+              pé.
             </p>
             <p>
               Minha gratidão a Flávia que sempre foi parceira nestes cinco anos,
               suportou minhas limitações e me mostrou as dela. Obrigada pelas
               tapiocas que você comprou para mim quando eu não tinha dinheiro na
-              faculdade, ainda estou te devendo por isso. Obrigada por ficar firme
-              até o fim.
+              faculdade, ainda estou te devendo por isso. Obrigada por ficar
+              firme até o fim.
             </p>
             <p>
               Agradeço a meu amigo Roberto, quem levarei no coração por todos os
-              conselhos e oportunidades que me ajudou a enxergar. Por acreditar no
-              meu potencial e me lembrar dele quando eu mesma não acreditava em
-              mim.
+              conselhos e oportunidades que me ajudou a enxergar. Por acreditar
+              no meu potencial e me lembrar dele quando eu mesma não acreditava
+              em mim.
             </p>
             <p>
               Nossa, são muitos anos e muitas pessoas, sou extremamente grata a
-              todos que fizeram parte da minha trajetória na Universidade Federal
-              de Pernambuco. Com todas as suas falhas, foi na universidade pública
-              que tive a oportunidade de ter contato com os melhores professores e
-              me formar como jornalista e cidadã. Espero que este direito siga
-              inegociável para pessoas como eu.
+              todos que fizeram parte da minha trajetória na Universidade
+              Federal de Pernambuco. Com todas as suas falhas, foi na
+              universidade pública que tive a oportunidade de ter contato com os
+              melhores professores e me formar como jornalista e cidadã. Espero
+              que este direito siga inegociável para pessoas como eu.
             </p>
           </v-col>
         </v-row>
@@ -79,14 +105,14 @@ export default {};
   font: 1rem "Open Sans", sans-serif;
 }
 
-@media only screen and (min-width: 768px){
-	.authors-sheet {
-		background-color: #f8f8f8;
-		text-align: justify;
-		padding: 1rem 15rem;
-	}
-  
-  .perfil{
+@media only screen and (min-width: 768px) {
+  .authors-sheet {
+    background-color: #f8f8f8;
+    text-align: justify;
+    padding: 1rem 15rem;
+  }
+
+  .perfil {
     object-fit: cover;
     object-position: top;
   }

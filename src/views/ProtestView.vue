@@ -28,12 +28,6 @@
           <v-col>
             <div class="pnews-tags">
               <p>Autores: Débora Oliveira</p>
-              <!-- <v-chip color="#616161" label class="mr-4">
-                <p class="ma-0 white--text">Alô</p>
-              </v-chip>
-              <v-chip color="#616161" label>
-                <p class="ma-0 white--text">Alô</p>
-              </v-chip> -->
             </div>
           </v-col>
         </v-row>
@@ -629,7 +623,7 @@ export default {
 .pnews-tags {
   margin-top: 5rem;
   color: #616161;
-  font: 1.2rem "Open Sans", sans-serif;
+  font: 0.5rem "Open Sans", sans-serif;
 }
 
 .pnews-tags h3 {
@@ -701,7 +695,7 @@ export default {
   .pnews-tags {
     margin-top: 5rem;
     color: #616161;
-    font: 1.2rem "Open Sans", sans-serif;
+    font: 1rem "Open Sans", sans-serif;
   }
 
   .pnews-tags h3 {

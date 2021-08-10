@@ -7,31 +7,28 @@
       style="z-index: 2"
     ></header-component>
     <main class="mt-16">
-      <img
-        class="news-banner"
-        src="../assets/materia1.png"
-      />
+      <img class="news-banner" src="../assets/materia1.png" />
       <v-container class="pt-0 news-sheet">
-        <v-row>
-          <v-col>
-            <div class="news-title">
-              <h1>Trabalhadores no ponto, criminosos nas ruas</h1>
-            </div>
-            <div class="news-subtitle">
-              <h2>
-                Um olhar sobre registros da última década que mostram como o
-                poder judiciário, a polícia e a mídia têm sido utilizados para
-                ‘criminalizar’ quem protesta
-              </h2>
-            </div>
-          </v-col>
-          <v-col>
-            <div class="news-tags">
-              <p>Autores: Débora Oliveira</p>
-            </div>
-          </v-col>
-        </v-row>
-        <div class="news-content mt-10">
+          <v-row>
+            <v-col>
+              <div class="news-title">
+                <h1>Trabalhadores no ponto, <br /> criminosos nas ruas</h1>
+              </div>
+              <div class="news-subtitle mb-10">
+                <h2>
+                  Um olhar sobre registros da última década que mostram como o
+                  poder judiciário, a polícia e a mídia têm sido utilizados para
+                  ‘criminalizar’ quem protesta
+                </h2>
+              </div>
+            </v-col>
+            <v-col>
+              <div class="news-tags">
+                <p>Autores: Débora Oliveira</p>
+              </div>
+            </v-col>
+          </v-row>
+        <div class="news-content">
           <p>
             <q>Ninguém gosta de fazer protesto, fazemos porque precisamos</q>,
             diz o presidente do Sindicato dos Petroleiros em Pernambuco
@@ -49,86 +46,85 @@
               prejudicando a locomoção - essa é a criminalização.</q
             >
           </p>
-        </div>
-        <v-carousel
-          cycle
-          height="100%"
-          class="my-10"
-          :show-arrows="false"
-          hide-delimiter-background
-          progress-color="#2A2A2A"
-          light
-        >
-          <v-carousel-item>
-            <v-card flat height="100%" color="#EBEBEB">
-              <v-card-title> Entenda: </v-card-title>
-              <v-card-text class="text-justify mb-10">
-                <p class="carousel-text">
-                  No Brasil, o DIREITO AO PROTESTO é garantido pela Constituição
-                  por meio de três leis: a liberdade de expressão, a liberdade
-                  de associação e a liberdade de reunião, a mais explícita de
-                  todas. Por meio dela é garantido a todo brasileiro reunir-se
-                  pacificamente, sem armas, em locais abertos ao público
-                  independentemente de autorização, sendo apenas exigido um
-                  aviso prévio à autoridade competente.<br /><br />
-                  ONG Artigo 19
-                </p>
-              </v-card-text>
-            </v-card>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-card flat height="100%" color="#EBEBEB">
-              <v-card-title> O que é o protesto? </v-card-title>
-              <v-card-text class="text-justify mb-10">
-                <p class="carousel-text">
-                  Ato coletivo em que pessoas se reúnem publicamente para
-                  expressar uma opinião pública. Uma reação solitária ou em
-                  grupo contra algo ou alguém. Ferramenta de apoio para que as
-                  pessoas sejam ouvidas e também influenciam outras pessoas para
-                  conseguir apoio e pedir por mudanças.
-                </p>
-              </v-card-text>
-            </v-card>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-card flat height="100%" color="#EBEBEB">
-              <v-card-title class="text-left">
-                CRIMINALIZAR: considerar crime, definir ato como crime, tornar
-                criminal.
-              </v-card-title>
-              <v-card-text class="text-justify mb-10">
-                <p class="carousel-text">
-                  Os crimes são definidos pelo Poder Legislativo. Depois,
-                  aplicados pelas instituições de controle social: a Polícia, o
-                  Ministério Público, e o Poder Judiciário, Na atuação desses
-                  atores, que elegem quando, como e contra quem agir, se
-                  materializa a criminalização de grupos sociais marginalizados.
-                  Um processo chamado pelo jurista argentino Eugenio Raúl
-                  Zaffaroni de “seletividade”.
-                </p>
-              </v-card-text>
-            </v-card>
-          </v-carousel-item>
-        </v-carousel>
-        <h2 class="content-subtitle my-10">A seletividade</h2>
-        <v-card flat outlined color="#F8F50D">
-          <v-card-text class="black--text text-center">
-            <p>
-              <q>
-                A Justiça existe para permitir que aqueles que não têm voz
-                possam ser ouvidos. Mas, hoje, está se tornando a ferramenta
-                usada por essas pessoas poderosas para reprimir aqueles que não
-                tem voz
-              </q>
-              <br />
-              <br />
-              Clément Voule, relator da ONU sobre Liberdade de Associação e
-              Reunião Pacífica
-            </p>
-          </v-card-text>
-        </v-card>
-        <div class="news-content mt-10">
-          <p>
+          <v-carousel
+            cycle
+            height="100%"
+            class="my-10"
+            :show-arrows="false"
+            hide-delimiter-background
+            progress-color="#2A2A2A"
+            light
+          >
+            <v-carousel-item>
+              <v-card flat height="100%" color="#EBEBEB">
+                <v-card-title> Entenda: </v-card-title>
+                <v-card-text class="text-justify mb-10">
+                  <p class="carousel-text">
+                    No Brasil, o DIREITO AO PROTESTO é garantido pela
+                    Constituição por meio de três leis: a liberdade de
+                    expressão, a liberdade de associação e a liberdade de
+                    reunião, a mais explícita de todas. Por meio dela é
+                    garantido a todo brasileiro reunir-se pacificamente, sem
+                    armas, em locais abertos ao público independentemente de
+                    autorização, sendo apenas exigido um aviso prévio à
+                    autoridade competente.<br /><br />
+                    ONG Artigo 19
+                  </p>
+                </v-card-text>
+              </v-card>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-card flat height="100%" color="#EBEBEB">
+                <v-card-title> O que é o protesto? </v-card-title>
+                <v-card-text class="text-justify mb-10">
+                  <p class="carousel-text">
+                    Ato coletivo em que pessoas se reúnem publicamente para
+                    expressar uma opinião pública. Uma reação solitária ou em
+                    grupo contra algo ou alguém. Ferramenta de apoio para que as
+                    pessoas sejam ouvidas e também influenciam outras pessoas
+                    para conseguir apoio e pedir por mudanças.
+                  </p>
+                </v-card-text>
+              </v-card>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-card flat height="100%" color="#EBEBEB">
+                <v-card-title class="text-left">
+                  CRIMINALIZAR: considerar crime, definir ato como crime, tornar
+                  criminal.
+                </v-card-title>
+                <v-card-text class="text-justify mb-10">
+                  <p class="carousel-text">
+                    Os crimes são definidos pelo Poder Legislativo. Depois,
+                    aplicados pelas instituições de controle social: a Polícia,
+                    o Ministério Público, e o Poder Judiciário, Na atuação
+                    desses atores, que elegem quando, como e contra quem agir,
+                    se materializa a criminalização de grupos sociais
+                    marginalizados. Um processo chamado pelo jurista argentino
+                    Eugenio Raúl Zaffaroni de “seletividade”.
+                  </p>
+                </v-card-text>
+              </v-card>
+            </v-carousel-item>
+          </v-carousel>
+          <h2 class="content-subtitle my-10">A seletividade</h2>
+          <v-card flat outlined color="#F8F50D">
+            <v-card-text class="black--text text-center">
+              <p>
+                <q>
+                  A Justiça existe para permitir que aqueles que não têm voz
+                  possam ser ouvidos. Mas, hoje, está se tornando a ferramenta
+                  usada por essas pessoas poderosas para reprimir aqueles que
+                  não tem voz
+                </q>
+                <br />
+                <br />
+                Clément Voule, relator da ONU sobre Liberdade de Associação e
+                Reunião Pacífica
+              </p>
+            </v-card-text>
+          </v-card>
+          <p class="mt-10">
             Cada vez mais leis estão sendo usadas para restringir o espaço que a
             sociedade civil tem para expressar seus direitos. Foi o que defendeu
             o então relator da ONU sobre Liberdade de Associação e Reunião
@@ -497,12 +493,7 @@
             faz parte do dia a dia de quem protesta.
           </p>
           <h2 class="content-subtitle my-10">O discurso da maçã podre</h2>
-          <v-card
-            class="mb-10"
-            flat
-            outlined
-            color="#F8F50D"
-          >
+          <v-card class="mb-10" flat outlined color="#F8F50D">
             <v-card-text class="black--text text-center">
               <p>
                 <q>
@@ -639,17 +630,50 @@
               <v-container>
                 <v-row>
                   <v-col class="manchete">
-                    <img class="content-manchete img-fluid"  src="../assets/manchete/1.png">
-                    <img class="content-manchete img-fluid" src="../assets/manchete/2.png">
-                    <img class="content-manchete img-fluid"  src="../assets/manchete/3.jpg">
-                    <img class="content-manchete img-fluid"  src="../assets/manchete/4.jpg">
-                    <img class="content-manchete img-fluid"  src="../assets/manchete/5.jpg">
-                    <img class="content-manchete img-fluid"  src="../assets/manchete/6.png">
-                    <img class="content-manchete img-fluid"  src="../assets/manchete/7.jpg">
-                    <img class="content-manchete img-fluid"  src="../assets/manchete/8.png">
-                    <img class="content-manchete img-fluid"  src="../assets/manchete/9.png">
-                    <img class="content-manchete img-fluid" src="../assets/manchete/10.png">
-                    <img class="content-manchete img-fluid" src="../assets/manchete/11.png">
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/1.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/2.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/3.jpg"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/4.jpg"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/5.jpg"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/6.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/7.jpg"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/8.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/9.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/10.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/11.png"
+                    />
                   </v-col>
                 </v-row>
               </v-container>
@@ -823,12 +847,7 @@
               o olhar das pessoas para conseguir a simpatia delas</q
             >.
           </p>
-          <v-card
-            class="mb-10"
-            flat
-            outlined
-            color="#F8F50D"
-          >
+          <v-card class="mb-10" flat outlined color="#F8F50D">
             <v-card-title class="black--text"> Fontes: </v-card-title>
             <v-card-text class="black--text">
               <p>
@@ -847,7 +866,6 @@
 </template>
 
 <script>
-
 !(function () {
   "use strict";
   window.addEventListener("message", function (e) {
@@ -881,14 +899,16 @@ export default {
     fonts: "",
   }),
 
-  mounted(){
-    const listImage = document.querySelectorAll(".manchete > .content-manchete")
+  mounted() {
+    const listImage = document.querySelectorAll(
+      ".manchete > .content-manchete"
+    );
     const separator = Math.ceil(Math.random() * 7);
-  
+
     listImage.forEach((item, i) => {
-      console.log(item)
+      console.log(item);
       if ((i + 1) % separator === 0) {
-        item.classList.add('img-animation');
+        item.classList.add("img-animation");
       }
     });
   },
@@ -924,12 +944,13 @@ export default {
 </script>
 
 <style lang="sass">
-
 .news-sheet
+  padding: 0 2rem
   background-color: #f8f8f8
 
 .news-title
   text-align: left
+  width: 22rem
   padding: 1rem
   color: #2a2a2a
   font: 1rem "Libre Baskerville", serif
@@ -954,13 +975,12 @@ export default {
 .news-tags
   margin-top: 5rem
   color: #616161
-  font: 1.2rem "Open Sans", sans-serif
+  font: 1rem "Open Sans", sans-serif
 
   h3
     margin-bottom: 5rem
 
 .news-content
-  padding: 0 2rem
   text-align: justify
   color: #616161
   font: 1rem "Open Sans", sans-serif
@@ -981,7 +1001,7 @@ export default {
 
 @keyframes fade
   0%,
-    100%
+  100%
     opacity: 0
 
   50%
@@ -989,6 +1009,7 @@ export default {
 
 @media only screen and (min-width: 768px)
   .news-sheet
+    padding: 15rem
     background-color: #f8f8f8
 
   .news-banner
@@ -999,6 +1020,7 @@ export default {
     z-index: 0
 
   .news-title
+    width: 25rem
     text-align: left
     padding: 1rem
     color: #2a2a2a
@@ -1017,12 +1039,13 @@ export default {
   .news-tags
     margin-top: 5rem
     color: #616161
-    font: 1.2rem "Open Sans", sans-serif
+    font: 1rem "Open Sans", sans-serif
 
     h3
       margin-bottom: 5rem
 
   .news-content
+    padding: 0
     text-align: justify
     color: #616161
     font: 1rem "Open Sans", sans-serif
@@ -1045,6 +1068,5 @@ export default {
 
     50%
       opacity: 1
-
 </style>
  

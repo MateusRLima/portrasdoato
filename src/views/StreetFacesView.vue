@@ -581,6 +581,7 @@ export default {
   width: 100%;
   height: 25rem;
   object-fit: cover;
+  object-position: 50% 35%;
   position: relative;
   z-index: 0;
 }
@@ -594,7 +595,7 @@ export default {
 .news-tags {
   margin-top: 5rem;
   color: #616161;
-  font: 0.5rem "Open Sans", sans-serif;
+  font: 1rem "Open Sans", sans-serif;
 }
 
 .news-tags h3 {
