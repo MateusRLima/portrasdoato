@@ -17,7 +17,7 @@
               </h2>
             </v-col>
             <v-col align-self="end" cols="1">
-              <v-btn @click="goToHome()" text color="#C4C4C4">Ver mais <v-icon color="#F8F50D">mdi-chevron-right</v-icon></v-btn>
+              <v-btn @click="goToVnews()" text color="#C4C4C4">Ver mais <v-icon color="#F8F50D">mdi-chevron-right</v-icon></v-btn>
             </v-col>
           </v-row>
           <v-row class="py-0">
@@ -38,40 +38,25 @@
               </template>
               <v-slide-item
                 light
-                v-for="item in items" 
-                :key="item.id"
               >
                 <v-card
-                  @click="goToHome()"
+                  @click="goToPnews()"
                   height="20rem"
                   width="35rem"
                   tile
                   color="#FCFCFC"
-                  class="ma-4"
+                  class="ma-4 pa-4"
                 >
                   <v-container>
                     <v-row>
                       <v-col>
-                        <v-chip outlined color="#2A2A2A" label>
-                          {{item.read_time}} minutos
-                        </v-chip>
                         <h3 class="news-list-title">
-                          {{item.title}}
+                          Protesto: o que é permitido por lei?
                         </h3>
-                        <h4 class="news-list-subtitle">
-                          {{item.subtitle}}
+                        <h4 class="news-list-subtitle mb-5">
+                          Entenda seus direitos como manifestante e saiba o que recomendam os manuais de ‘conduta’ existentes 
                         </h4>
                         <v-btn text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
-                      </v-col>
-                      <v-col>
-                        <div class="news-image" :style="{backgroundImage: `url(${item.img_url})`}">
-                          <v-chip color="#2A2A2A" label class="mr-4">
-                            <p class="ma-0 white--text">{{item.format}}</p>
-                          </v-chip>
-                          <v-chip color="#2A2A2A" label>
-                            <p class="ma-0 white--text">{{item.theme}}</p>
-                          </v-chip>
-                        </div>
                       </v-col>
                     </v-row>
                   </v-container>
@@ -104,8 +89,12 @@ export default {
   },
 
   methods: {
-    goToHome(){
-      this.$router.push("/news")
+    goToPnews(){
+      this.$router.push("/pnews")
+    },
+
+    goToVnews(){
+      this.$router.push("/vnews")
     }
   }
 
@@ -115,6 +104,15 @@ export default {
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+  
+  .home{
+    height: 100%;
+    background: url('https://storage.googleapis.com/news-storage-ea132.appspot.com/images/1628175900171.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
   .principal-title{
     padding: 0.5rem;

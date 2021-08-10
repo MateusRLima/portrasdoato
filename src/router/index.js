@@ -9,21 +9,30 @@ const routes = [
     name: 'Home',
     component: () => import('../views/Home.vue')
   },
+
   {
     path: '/about',
     name: 'About',
     component: () => import('../views/About.vue')
   },
-  // {
-  //   path: '/news',
-  //   name: 'News',
-  //   component: () => import('../views/News.vue')
-  // },
+
   {
-    path: '/news',
+    path: '/authors',
+    name: 'Authors',
+    component: () => import('../views/Authors.vue')
+  },
+
+  {
+    path: '/vnews',
     name: 'ViolenceView',
     component: () => import('../views/ViolenceView.vue')
-  }
+  },
+
+  {
+    path: '/pnews',
+    name: 'ProtestView',
+    component: () => import('../views/ProtestView.vue')
+  },
   
 ]
 

@@ -28,12 +28,6 @@
           <v-col>
             <div class="news-tags">
               <p>Autores: Débora Oliveira</p>
-              <v-chip color="#616161" label class="mr-4">
-                <p class="ma-0 white--text">Alô</p>
-              </v-chip>
-              <v-chip color="#616161" label>
-                <p class="ma-0 white--text">Alô</p>
-              </v-chip>
             </div>
           </v-col>
         </v-row>
@@ -118,7 +112,7 @@
         </v-carousel>
         <h2 class="content-subtitle my-10">A seletividade</h2>
         <v-card flat outlined color="#F8F50D">
-          <v-card-text class="black--text">
+          <v-card-text class="black--text text-center">
             <p>
               <q>
                 A Justiça existe para permitir que aqueles que não têm voz
@@ -640,24 +634,21 @@
           <h2 class="content-subtitle my-10">
             Morreu na contramão, atrapalhando o tráfego
           </h2>
-          <v-card outlined>
+          <v-card flat class="my-10">
             <v-card-text>
               <v-container>
                 <v-row >
                   <img class="content-manchete"  src="../assets/manchete/1.png">
-                  <img  class="content-manchete" src="../assets/manchete/2.jpeg">
-                  <img class="content-manchete"  src="../assets/manchete/3.png">
-                  <img class="content-manchete"  src="../assets/manchete/4.png">
+                  <img  class="content-manchete" src="../assets/manchete/2.png">
+                  <img class="content-manchete"  src="../assets/manchete/3.jpg">
+                  <img class="content-manchete"  src="../assets/manchete/4.jpg">
                   <img class="content-manchete"  src="../assets/manchete/5.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/6.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/7.png">
-                  <img class="content-manchete"  src="../assets/manchete/8.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/9.jpg">
+                  <img class="content-manchete"  src="../assets/manchete/6.png">
+                  <img class="content-manchete"  src="../assets/manchete/7.jpg">
+                  <img class="content-manchete"  src="../assets/manchete/8.png">
+                  <img class="content-manchete"  src="../assets/manchete/9.png">
                   <img  class="content-manchete" src="../assets/manchete/10.png">
                   <img  class="content-manchete" src="../assets/manchete/11.png">
-                  <img  class="content-manchete" src="../assets/manchete/12.png">
-                  <img  class="content-manchete" src="../assets/manchete/13.png">
-                  <img  class="content-manchete" src="../assets/manchete/14.png">
                 </v-row>
               </v-container>
             </v-card-text>
@@ -917,68 +908,144 @@ export default {
 };
 </script>
 
-<style>
-.news-sheet {
-  padding: 15rem;
-  background-color: #f8f8f8;
-  width: 100rem;
-}
+<style >
+  .news-sheet {
+    /* padding: 15rem; */
+    background-color: #f8f8f8;
+    /* text-align: justify; */
+  }
 
-.news-banner {
-  width: 100%;
-  height: 25rem;
-  object-fit: cover;
-  position: relative;
-  z-index: 0;
-}
+  .news-title {
+    text-align: left;
+    padding: 1rem;
+    /* width: 30rem; */
+    color: #2a2a2a;
+    font: 1rem "Libre Baskerville", serif;
+    background: #f8f50d;
+    font-weight: bold;
+    position: relative;
+    top: -20%;
+    z-index: 1;
+  }
 
-.news-title {
-  text-align: left;
-  padding: 1rem;
-  width: 30rem;
-  color: #2a2a2a;
-  font: 1rem "Libre Baskerville", serif;
-  background: #f8f50d;
-  font-weight: bold;
-  position: relative;
-  top: -20%;
-  z-index: 1;
-}
+  .news-banner {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+  }
 
-.news-subtitle {
-  text-align: justify;
-  color: #616161;
-  font: 0.8rem "Open Sans", sans-serif;
-}
+  .news-subtitle {
+    text-align: justify;
+    color: #616161;
+    font: 0.8rem "Open Sans", sans-serif;
+  }
 
-.news-tags {
-  margin-top: 5rem;
-  color: #616161;
-  font: 1.2rem "Open Sans", sans-serif;
-}
+  .news-tags {
+    margin-top: 5rem;
+    color: #616161;
+    font: 1.2rem "Open Sans", sans-serif;
+  }
 
-.news-tags h3 {
-  margin-bottom: 5rem;
-}
+  .news-tags h3 {
+    margin-bottom: 5rem;
+  }
 
-.news-content {
-  text-align: justify;
-  color: #616161;
-  font: 1rem "Open Sans", sans-serif;
-}
+  .news-content {
+    text-align: justify;
+    color: #616161;
+    font: 1rem "Open Sans", sans-serif;
+  }
 
-.content-subtitle {
-  color: #616161;
-  text-align: justify;
-}
+  .content-subtitle {
+    color: #616161;
+    text-align: justify;
+  }
 
-.content-manchete{
-  position: relative;
-  width: 25%;
-  height: 25%;
-}
+  .content-manchete:nth-child(2n){
+    animation: fade 5s infinite;
+  }
 
-.carousel-text {
-  font-size: 1rem;
+  .content-manchete:nth-child(1n){
+    animation: fade 5s infinite;
+  }
+
+  
+  @keyframes fade {
+    0%,
+    100% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+  }
+
+
+
+@media only screen and (min-width: 768px) {
+  .news-sheet {
+    padding: 15rem;
+    background-color: #f8f8f8;
+  }
+
+  .news-banner {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+  }
+
+  .news-title {
+    text-align: left;
+    padding: 1rem;
+    width: 30rem;
+    color: #2a2a2a;
+    font: 1rem "Libre Baskerville", serif;
+    background: #f8f50d;
+    font-weight: bold;
+    position: relative;
+    top: -20%;
+    z-index: 1;
+  }
+
+  .news-subtitle {
+    text-align: justify;
+    color: #616161;
+    font: 0.8rem "Open Sans", sans-serif;
+  }
+
+  .news-tags {
+    margin-top: 5rem;
+    color: #616161;
+    font: 1.2rem "Open Sans", sans-serif;
+  }
+
+  .news-tags h3 {
+    margin-bottom: 5rem;
+  }
+
+  .news-content {
+    text-align: justify;
+    color: #616161;
+    font: 1rem "Open Sans", sans-serif;
+  }
+
+  .content-subtitle {
+    color: #616161;
+    text-align: justify;
+  }
+
+  .content-manchete{
+    position: relative;
+    width: 25%;
+    height: 25%;
+  }
+
+  .carousel-text {
+    font-size: 1rem;
+  }
 }
 </style>
