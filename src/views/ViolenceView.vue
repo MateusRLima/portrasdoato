@@ -7,12 +7,15 @@
       style="z-index: 2"
     ></header-component>
     <main class="mt-16">
-      <img class="news-banner" src="../assets/materia1.png" />
+      <div style="position: relative;">
+          <img class="news-banner" src="../assets/materia1.jpg" />
+          <!-- <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Sindicalistas ocupam Brasília, em ato pelos direitos dos/as trabalhadores/as e enfrentam repressão e violência policial, 2015. Foto: Reprodução/Zeca Ribeiro</div> -->
+      </div>
       <v-container class="pt-0 news-sheet">
           <v-row>
             <v-col>
               <div class="news-title">
-                <h1>Trabalhadores no ponto, <br /> criminosos nas ruas</h1>
+                <h1>Trabalhadores no ponto, criminosos nas ruas</h1>
               </div>
               <div class="news-subtitle mb-10">
                 <h2>
@@ -20,11 +23,6 @@
                   poder judiciário, a polícia e a mídia têm sido utilizados para
                   ‘criminalizar’ quem protesta
                 </h2>
-              </div>
-            </v-col>
-            <v-col>
-              <div class="news-tags">
-                <p>Autores: Débora Oliveira</p>
               </div>
             </v-col>
           </v-row>
@@ -57,7 +55,12 @@
           >
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> Entenda: </v-card-title>
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>Entenda</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
                 <v-card-text class="text-justify mb-10">
                   <p class="carousel-text">
                     No Brasil, o DIREITO AO PROTESTO é garantido pela
@@ -75,7 +78,12 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> O que é o protesto? </v-card-title>
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>O que é o protesto?</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
                 <v-card-text class="text-justify mb-10">
                   <p class="carousel-text">
                     Ato coletivo em que pessoas se reúnem publicamente para
@@ -89,9 +97,12 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title class="text-left">
-                  CRIMINALIZAR: considerar crime, definir ato como crime, tornar
-                  criminal.
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>CRIMINALIZAR: considerar crime,  definir ato como crime, <br/>tornar
+                      criminal.</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
                 </v-card-title>
                 <v-card-text class="text-justify mb-10">
                   <p class="carousel-text">
@@ -107,23 +118,26 @@
               </v-card>
             </v-carousel-item>
           </v-carousel>
-          <h2 class="content-subtitle my-10">A seletividade</h2>
-          <v-card flat outlined color="#F8F50D">
-            <v-card-text class="black--text text-center">
-              <p>
-                <q>
-                  A Justiça existe para permitir que aqueles que não têm voz
-                  possam ser ouvidos. Mas, hoje, está se tornando a ferramenta
-                  usada por essas pessoas poderosas para reprimir aqueles que
-                  não tem voz
-                </q>
-                <br />
-                <br />
-                Clément Voule, relator da ONU sobre Liberdade de Associação e
-                Reunião Pacífica
-              </p>
-            </v-card-text>
-          </v-card>
+          <h2 class="content-subtitle my-15">A seletividade</h2>
+          <p
+            class="font-special mt-10 mb-5"
+          >
+          <span class="big-quote">“</span>
+              A Justiça existe para permitir que aqueles que não têm voz
+              possam ser ouvidos. Mas, hoje, está se tornando a ferramenta
+              usada por essas pessoas poderosas para reprimir aqueles que
+              não tem voz
+          </p>
+          <h3
+            class="mt-5 mb-2"
+            style="font: 1.5rem Libre Baskerville, serif; font-weight: bold"
+          >
+             Clément Voule
+          </h3>
+          <p class="font-special">
+            Relator da ONU sobre Liberdade de Associação e
+              Reunião Pacífica
+          </p>
           <p class="mt-10">
             Cada vez mais leis estão sendo usadas para restringir o espaço que a
             sociedade civil tem para expressar seus direitos. Foi o que defendeu
@@ -313,7 +327,10 @@
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
                 <v-card-title>
-                  Por que os trabalhadores fazem greve?
+                  <v-col align="left" class="pa-0">
+                    <p> Por que os trabalhadores fazem greve? </p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
                 </v-card-title>
                 <v-card-text class="text-justify carousel-text mb-10">
                   <p class="carousel-text">
@@ -329,7 +346,12 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> O que são greves abusivas? </v-card-title>
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p> O que são greves abusivas? </p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
                 <v-card-text class="text-justify carousel-text mb-10">
                   <p class="carousel-text">
                     A greve é legítima quando seus motivos são relacionados a o
@@ -347,7 +369,10 @@
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
                 <v-card-title>
-                  Quantos % do efetivo deve funcionar em uma greve?
+                  <v-col align="left" class="pa-0">
+                    <p> Quantos % do efetivo deve funcionar em uma greve? </p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
                 </v-card-title>
                 <v-card-text class="text-justify carousel-text mb-10">
                   <p class="carousel-text">
@@ -461,7 +486,7 @@
               alt="Manifestantes saíram em passeata pelo centro de São Paulo"
               style="width: 100%"
             />
-            <figcaption>
+            <figcaption class="text-right" style="font-size: 0.8rem">
               Manifestantes saíram em passeata pelo centro de São Paulo -
               Rodrigo Gomes | RBA
             </figcaption>
@@ -493,21 +518,23 @@
             faz parte do dia a dia de quem protesta.
           </p>
           <h2 class="content-subtitle my-10">O discurso da maçã podre</h2>
-          <v-card class="mb-10" flat outlined color="#F8F50D">
-            <v-card-text class="black--text text-center">
-              <p>
-                <q>
-                  Gloriosa Polícia Civil / Em defesa de quem precisar / Gloriosa
-                  Polícia Civil / Nossa Lei sabes honrar
-                </q>
-                <br />
-                <br />
-                Hino da Polícia Civil do Rio de Janeiro, <br />
-                Composição: José Ribamar Serra e Silva - Sargento CBMERJ - RG
-                00438
-              </p>
-            </v-card-text>
-          </v-card>
+          <p
+            class="font-special mt-10 mb-5"
+          >
+          <span class="big-quote">“</span>
+              Gloriosa Polícia Civil / Em defesa de quem precisar / Gloriosa
+              Polícia Civil / Nossa Lei sabes honrar
+          </p>
+          <h3
+            class="mt-5 mb-2"
+            style="font: 1.5rem Libre Baskerville, serif; font-weight: bold"
+          >
+             Hino da Polícia Civil do Rio de Janeiro
+          </h3>
+          <p class="font-special mb-10">
+            Composição: José Ribamar Serra e Silva - Sargento CBMERJ - RG
+            00438
+          </p>
           <p>
             Quando a repressão não vem por meio do mal uso da lei, ela é sentida
             no ato. No tiro de bala de borracha que deixou sequelas, no abuso
@@ -625,7 +652,7 @@
           <h2 class="content-subtitle my-10">
             Morreu na contramão, atrapalhando o tráfego
           </h2>
-          <v-card flat class="my-10">
+          <!-- <v-card flat class="my-10">
             <v-card-text>
               <v-container>
                 <v-row>
@@ -678,7 +705,7 @@
                 </v-row>
               </v-container>
             </v-card-text>
-          </v-card>
+          </v-card> -->
           <p>
             As manchetes acima foram colhidas de capas de jornais, trechos de
             reportagens e leads (o primeiro e mais importante parágrafos das
@@ -860,8 +887,12 @@
             </v-card-text>
           </v-card>
         </div>
+        <v-btn @click="goToSnews()" text color="#2A2A2A">Rostos da Rua <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
       </v-container>
     </main>
+    <footer>
+
+    </footer>
   </div>
 </template>
 
@@ -880,8 +911,6 @@
   });
 })();
 
-import { apiCreateNews } from "../services";
-
 export default {
   name: "ViolenceView",
 
@@ -899,58 +928,33 @@ export default {
     fonts: "",
   }),
 
-  mounted() {
-    const listImage = document.querySelectorAll(
-      ".manchete > .content-manchete"
-    );
-    const separator = Math.ceil(Math.random() * 7);
-
-    listImage.forEach((item, i) => {
-      console.log(item);
-      if ((i + 1) % separator === 0) {
-        item.classList.add("img-animation");
-      }
-    });
-  },
-
   methods: {
-    getFormData(object) {
-      const formData = new FormData();
-      Object.keys(object).forEach((key) => formData.append(key, object[key]));
-      return formData;
-    },
-
-    createNews() {
-      this.tags.format = this.selectedFormat;
-      this.tags.theme = this.theme;
-
-      let data = new FormData();
-
-      data.append("title", this.title);
-      data.append("subtitle", this.subtitle);
-      data.append("image", this.image);
-      data.append("author", this.author);
-      data.append("is_main_news", this.isMainNews);
-      Object.keys(this.tags).forEach((key) => data.append(key, this.tags[key]));
-      data.append("news", this.newsDescription);
-      data.append("fonts", this.fonts);
-
-      apiCreateNews(data).then((response) => {
-        alert(response);
-      });
-    },
+    goToSnews(){
+      this.$router.push("/snews")
+      window.scrollTo(0,0);
+    }
   },
 };
 </script>
 
 <style lang="sass">
+ .big-quote
+    font-size: 3rem
+    color: #F8F50D
+    
+
+.font-special 
+  color: #8e8e8e
+  font: 1.3rem "Libre Baskerville", serif
+  line-height: 1.6rem
+
+
 .news-sheet
   padding: 0 2rem
   background-color: #f8f8f8
 
 .news-title
-  text-align: left
-  width: 22rem
+  text-align: center
   padding: 1rem
   color: #2a2a2a
   font: 1rem "Libre Baskerville", serif
@@ -968,7 +972,7 @@ export default {
   z-index: 0
 
 .news-subtitle
-  text-align: justify
+  text-align: center
   color: #616161
   font: 0.8rem "Open Sans", sans-serif
 
@@ -1019,9 +1023,7 @@ export default {
     position: relative
     z-index: 0
 
-  .news-title
-    width: 25rem
-    text-align: left
+  .news-title 
     padding: 1rem
     color: #2a2a2a
     font: 1rem "Libre Baskerville", serif
@@ -1030,9 +1032,10 @@ export default {
     position: relative
     top: -20%
     z-index: 1
+  
 
   .news-subtitle
-    text-align: justify
+    text-align: center
     color: #616161
     font: 0.8rem "Open Sans", sans-serif
 
@@ -1049,10 +1052,11 @@ export default {
     text-align: justify
     color: #616161
     font: 1rem "Open Sans", sans-serif
+    line-height: 1.6rem
 
   .content-subtitle
     color: #616161
-    text-align: justify
+    text-align: center
 
   .carousel-text
     font-size: 1rem

@@ -7,27 +7,22 @@
       style="z-index: 2"
     ></header-component>
     <main class="mt-16">
-      <img
-        class="pnews-banner"
-        src="../assets/materia4.jpg"
-      />
+      <div style="position: relative;">
+          <img class="pnews-banner" src="../assets/materia4.jpg" />
+          <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Constituição Federal. Foto: Reprodução/Ricardo</div>
+      </div>
       <v-container class="pt-0 pnews-sheet">
         <v-row>
           <v-col>
             <div class="pnews-title">
-              <h1>Sem oxigênio</h1>
+              <h1>Protesto: o que é permitido por lei?</h1>
             </div>
             <div class="pnews-subtitle">
               <h2>
-                Um olhar sobre registros da última década que mostram como o
-                poder judiciário, a polícia e a mídia têm sido utilizados para
-                ‘criminalizar’ quem protesta
+                No mundo todo, organizações civis criaram manuais para
+                manifestantes, que exploram os direitos e deveres de quem decide
+                ir às ruas e trazem dicas de segurança
               </h2>
-            </div>
-          </v-col>
-          <v-col>
-            <div class="pnews-tags">
-              <p>Autores: Débora Oliveira</p>
             </div>
           </v-col>
         </v-row>
@@ -96,14 +91,20 @@
         >
           <v-carousel-item>
             <v-card flat height="100%" color="#EBEBEB">
-              <v-card-title> Para não esquecer: </v-card-title>
+              <v-card-title>
+                <v-col align="left" class="pa-0">
+                  <p>Para não esquecer</p>
+                  <v-divider style="background-color: #f8f50d"></v-divider>
+                </v-col>
+              </v-card-title>
               <v-card-text class="text-justify">
                 <p class="carousel-text">
                   Visto que um policial é funcionário público, em exercício de
                   funções de interesse público, aplica-se o princípio da
                   transparência e afasta-se a argumentação de defesa da honra e
                   privacidade.
-                  <br /><br />
+                </p>
+                <p class="text-right" style="font-size: 0.8rem">
                   Art. 3º da Lei 4.898/65
                 </p>
               </v-card-text>
@@ -111,13 +112,19 @@
           </v-carousel-item>
           <v-carousel-item>
             <v-card flat height="100%" color="#EBEBEB">
-              <v-card-title> O que é o protesto? </v-card-title>
+              <v-card-title>
+                <v-col align="left" class="pa-0">
+                  <p>Para não esquecer</p>
+                  <v-divider style="background-color: #f8f50d"></v-divider>
+                </v-col>
+              </v-card-title>
               <v-card-text class="text-justify">
                 <p class="carousel-text">
                   Filmar e fotografar é um direito garantido a todo cidadão
                   brasileiro ou residente no Brasil, em todo o território
                   nacional
-                  <br /><br />
+                </p>
+                <p class="text-right" style="font-size: 0.8rem">
                   Art. 5º, IV, VIII e IX e art. 220, §2º da CF
                 </p>
               </v-card-text>
@@ -214,19 +221,27 @@
             manifestante mantenha sempre o celular bloqueado para evitar que
             vídeos e fotos sejam apagados.
           </p>
-          <v-card class="mb-10" flat outlined color="#F8F50D">
-            <v-card-text class="black--text text-center">
-              <p>
-                Para não esquecer:
-                <br />
-                <br />
-                § 1º Nenhuma lei conterá dispositivo que possa constituir
-                embaraço à plena liberdade de informação jornalística em
-                qualquer veículo de comunicação social, observado o disposto no
-                art. 5º, IV, V, X, XIII e XIV.
-              </p>
-            </v-card-text>
-          </v-card>
+          <h3
+            class="mt-10 mb-5"
+            style="font: 1.5rem Libre Baskerville, serif; font-weight: bold"
+          >
+            Para não esquecer
+          </h3>
+          <p class="font-special">
+            § 1º Nenhuma lei conterá dispositivo que possa constituir embaraço à
+            plena liberdade de informação jornalística em qualquer veículo de
+            comunicação social, observado o disposto no art. 5º, IV, V, X, XIII
+            e XIV.
+          </p>
+          <div
+            style="
+              width: 75px;
+              height: 15px;
+              background-color: #f8f50d;
+              border-radius: 5px;
+            "
+            class="mb-10"
+          ></div>
           <p>
             Andar em grupo é uma recomendação importante, uma ressalva é que
             esse grupo deve manter um padrão para identificação, como a cor da
@@ -293,7 +308,12 @@
           >
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> Dica 1 </v-card-title>
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>Dica 1</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
                 <v-card-text class="text-justify carousel-text">
                   <p class="carousel-text">
                     Se de forma segura, for possível filmar o comandante da ação
@@ -308,7 +328,12 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> Dica 2 </v-card-title>
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>Dica 2</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
                 <v-card-text class="text-justify carousel-text">
                   <p class="carousel-text">
                     Durante a filmagem de revistas abusivas e ilegais, filme a
@@ -321,7 +346,12 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> Dica 3 </v-card-title>
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>Dica 3</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
                 <v-card-text class="text-justify">
                   <p class="carousel-text">
                     Em casos de agressões realizadas por policiais, a filmagem
@@ -337,7 +367,12 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> Dica 4 </v-card-title>
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>Dica 4</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
                 <v-card-text class="text-justify">
                   <p class="carousel-text">
                     Nos casos de prisões de manifestantes conduzidos até a
@@ -351,7 +386,12 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> Dica 5 </v-card-title>
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>Dica 5</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
                 <v-card-text class="text-justify">
                   <p class="carousel-text">
                     Em segurança, se for necessário, grave depoimentos de
@@ -364,7 +404,12 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> Dica 6 </v-card-title>
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>Dica 6</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
                 <v-card-text class="text-justify">
                   <p class="carousel-text">
                     Nunca desligue a câmera nem pare de gravar se estiver
@@ -376,7 +421,7 @@
               </v-card>
             </v-carousel-item>
           </v-carousel>
-          <p>
+          <p class="text-right" style="font-size: 0.7rem">
             Legenda: Dicas gerais da cartilha produzida pela ONG Artigo 19, para
             o manifestante que deseja filmar e registrar protestos
           </p>
@@ -397,11 +442,13 @@
             tomadas incorretamente.
           </p>
           <h2 class="content-subtitle my-10">A difícil tarefa de registrar</h2>
-          <img
-            src="../assets/foto caio guatelli.jpg"
-            width="100%"
-            class="mb-10"
-          />
+          <figure class="my-10">
+            <img src="../assets/foto caio guatelli.jpg" width="100%" />
+            <figcaption class="text-right" style="font-size: 0.8rem">
+              Alex Silveira, logo após ser atingido por um tiro de bala de
+              borracha. Foto: Reprodução/Caio Guatelli
+            </figcaption>
+          </figure>
           <p>
             Apesar de ser um direito, registrar um protesto é uma tarefa
             perigosa e desafiadora. Nos anos 2000, o jornalista Alex Silveira
@@ -414,20 +461,19 @@
               target="_blank"
               >decisão</a
             >
-            foi repudiada publicamente pela
+            foi
             <a
               href="https://abraji.org.br/noticias/abraji-se-solidariza-com-fotografo-condenado-por-ser-vitima-de-bala-de-borracha"
               target="_blank"
-              >Associação Brasileira de Jornalismo Investigativo (Abraji)</a
-            >.
+              >repudiada</a
+            >
+            publicamente pela Associação Brasileira de Jornalismo Investigativo
+            (Abraji). Apenas 20 anos depois, em 2020, Alex conseguiu na justiça
+            o direito a indenização por causa do ocorrido.
           </p>
-          <img src="../assets/12.png" width="100%" class="my-10" />
+          <p class="text-center my-10" style="font-size: 1.5rem">***</p>
           <p>
-            Apenas 20 anos depois, em 2020, Alex conseguiu na justiça o direito
-            a indenização por causa do ocorrido.
-          </p>
-          <p>
-            O relatório produzido pela UNESCO em 2020 intitulado
+            Um relatório produzido pela UNESCO em 2020, intitulado
             <a
               href="https://unesdoc.unesco.org/ark:/48223/pf0000374206_por"
               target="_blank"
@@ -467,11 +513,16 @@
             protestos, além disso, são mais de 500 ocorrências de casos isolados
             de violações de direitos nas manifestações.
           </p>
-          <img
-            src="../assets/Foto_ Instagram foto jornalista daniel arroyo.jpg"
-            width="100%"
-            class="my-10"
-          />
+          <figure class="my-10">
+            <img
+              src="../assets/Foto_ Instagram foto jornalista daniel arroyo.jpg"
+              width="100%"
+              
+            />
+            <figcaption class="text-right" style="font-size: 0.8rem">
+              Daniel ficou ferido na perna direita após ser atingido pela bala de borracha. Foto: Arquivo Pessoal/Daniel Arroyo
+            </figcaption>
+          </figure>
           <p>
             Em 2019, o fotojornalista Daniel Arroyo foi atingido no joelho por
             um disparo de tiro de borracha e precisou ser levado ao
@@ -511,16 +562,27 @@
             da execução de mandados judiciais de manutenção e reintegração de
             posse.
           </p>
-          <v-card class="mb-10" flat outlined color="#F8F50D">
-            <v-card-text class="black--text text-center">
-              <p>
-                PARÁGRAFO ÚNICO: Os repórteres, fotógrafos e demais
-                profissionais de comunicação devem gozar de especial proteção no
-                exercício de sua profissão, sendo vedado qualquer óbice à sua
-                atuação, em especial mediante uso da força.
-              </p>
-            </v-card-text>
-          </v-card>
+          <h3
+            class="mt-10 mb-5"
+            style="font: 1.5rem Libre Baskerville, serif; font-weight: bold"
+          >
+            Para não esquecer
+          </h3>
+          <p class="font-special">
+            Os repórteres, fotógrafos e demais profissionais de comunicação
+            devem gozar de especial proteção no exercício de sua profissão,
+            sendo vedado qualquer óbice à sua atuação, em especial mediante uso
+            da força.
+          </p>
+          <div
+            style="
+              width: 75px;
+              height: 15px;
+              background-color: #f8f50d;
+              border-radius: 5px;
+            "
+            class="mb-10"
+          ></div>
           <p>
             Além da legislação, as dicas para jornalistas que vão cobrir
             protestos são:
@@ -582,11 +644,9 @@
 </template>
 
 <script>
-
 export default {
   name: "ProtestView",
 };
-
 </script>
 
 <style >
@@ -595,7 +655,7 @@ export default {
 }
 
 .pnews-title {
-  text-align: left;
+  text-align: center;
   padding: 1rem;
   color: #2a2a2a;
   font: 1rem "Libre Baskerville", serif;
@@ -615,7 +675,7 @@ export default {
 }
 
 .pnews-subtitle {
-  text-align: justify;
+  text-align: center;
   color: #616161;
   font: 0.8rem "Open Sans", sans-serif;
 }
@@ -634,11 +694,18 @@ export default {
   text-align: justify;
   color: #616161;
   font: 1rem "Open Sans", sans-serif;
+  line-height: 1.6rem;
 }
 
 .content-subtitle {
   color: #616161;
   text-align: justify;
+}
+
+.font-special {
+  color: #8e8e8e;
+  font: 1.1rem "Libre Baskerville", serif;
+  line-height: 1.6rem;
 }
 
 .content-manchete:nth-child(2n) {
@@ -674,9 +741,7 @@ export default {
   }
 
   .pnews-title {
-    text-align: left;
     padding: 1rem;
-    width: 30rem;
     color: #2a2a2a;
     font: 1rem "Libre Baskerville", serif;
     background: #f8f50d;
@@ -687,7 +752,7 @@ export default {
   }
 
   .pnews-subtitle {
-    text-align: justify;
+    text-align: center;
     color: #616161;
     font: 0.8rem "Open Sans", sans-serif;
   }
@@ -706,11 +771,18 @@ export default {
     text-align: justify;
     color: #616161;
     font: 1rem "Open Sans", sans-serif;
+    line-height: 1.6rem;
+  }
+
+  .font-special {
+    color: #8e8e8e;
+    font: 1.3rem "Libre Baskerville", serif;
+    line-height: 1.6rem;
   }
 
   .content-subtitle {
     color: #616161;
-    text-align: justify;
+    text-align: center;
   }
 
   .content-manchete {

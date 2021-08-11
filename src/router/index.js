@@ -17,6 +17,12 @@ const routes = [
   },
 
   {
+    path: '/acknowledgment',
+    name: 'Acknowledgment',
+    component: () => import('../views/Acknowledgment.vue')
+  },
+
+  {
     path: '/authors',
     name: 'Authors',
     component: () => import('../views/Authors.vue')
@@ -38,6 +44,30 @@ const routes = [
     path: '/snews',
     name: 'StreetFacesView',
     component: () => import('../views/StreetFacesView.vue')
+  },
+
+  {
+    path: '/ednalva',
+    name: 'EdnalvaView',
+    component: () => import('../views/EdnalvaView.vue')
+  },
+
+  {
+    path: '/dayvid',
+    name: 'DayvidView',
+    component: () => import('../views/DayvidView.vue')
+  },
+
+  {
+    path: '/francis',
+    name: 'FrancisView',
+    component: () => import('../views/FrancisView.vue')
+  },
+
+  {
+    path: '/jeremias',
+    name: 'JeremiasView',
+    component: () => import('../views/JeremiasView.vue')
   },
   
 ]
