@@ -9,7 +9,7 @@
     <main class="mt-16">
       <div style="position: relative">
         <img class="news-banner" src="../assets/materia1.jpg" />
-        <!-- <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Sindicalistas ocupam Brasília, em ato pelos direitos dos/as trabalhadores/as e enfrentam repressão e violência policial, 2015. Foto: Reprodução/Zeca Ribeiro</div> -->
+        <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Sindicalistas ocupam Brasília, em ato pelos direitos dos/as trabalhadores/as e enfrentam repressão e violência policial, 2015. Foto: Reprodução/Zeca Ribeiro</div>
       </div>
       <v-container class="pt-0 news-sheet">
         <v-row>
@@ -100,8 +100,7 @@
                 <v-card-title>
                   <v-col align="left" class="pa-0">
                     <p>
-                      CRIMINALIZAR: considerar crime, definir ato como crime,
-                      <br />tornar criminal.
+                      CRIMINALIZAR: considerar crime, definir ato como crime, tornar criminal.
                     </p>
                     <v-divider style="background-color: #f8f50d"></v-divider>
                   </v-col>
@@ -940,14 +939,14 @@ export default {
   line-height: 1.6rem
 
 .news-sheet
-  padding: 0 2rem
+  padding: 200px
   background-color: #f8f8f8
 
 .news-title
   text-align: center
   padding: 1rem
   color: #2a2a2a
-  font: 1rem "Libre Baskerville", serif
+  font: 0.9rem "Libre Baskerville", serif
   background: #f8f50d
   font-weight: bold
   position: relative
@@ -1003,7 +1002,7 @@ export default {
 
 @media only screen and (min-width: 768px)
   .news-sheet
-    padding: 15rem
+    padding: 200px
     background-color: #f8f8f8
 
   .news-banner
@@ -1016,7 +1015,7 @@ export default {
   .news-title
     padding: 1rem
     color: #2a2a2a
-    font: 1rem "Libre Baskerville", serif
+    font: 0.9rem "Libre Baskerville", serif
     background: #f8f50d
     font-weight: bold
     position: relative
@@ -1037,7 +1036,6 @@ export default {
       margin-bottom: 5rem
 
   .news-content
-    padding: 0
     text-align: justify
     color: #616161
     font: 1rem "Open Sans", sans-serif
