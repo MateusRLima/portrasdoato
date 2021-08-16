@@ -7,17 +7,17 @@
       style="z-index: 2"
     ></header-component>
     <main class="mt-16">
-      <img
-        class="news-banner"
-        src="https://storage.googleapis.com/news-storage-ea132.appspot.com/images/1628175900171.png"
-      />
+      <div style="position: relative">
+        <img class="news-banner" src="../assets/materia1.jpg" />
+        <!-- <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Sindicalistas ocupam Brasília, em ato pelos direitos dos/as trabalhadores/as e enfrentam repressão e violência policial, 2015. Foto: Reprodução/Zeca Ribeiro</div> -->
+      </div>
       <v-container class="pt-0 news-sheet">
         <v-row>
           <v-col>
             <div class="news-title">
               <h1>Trabalhadores no ponto, criminosos nas ruas</h1>
             </div>
-            <div class="news-subtitle">
+            <div class="news-subtitle mb-10">
               <h2>
                 Um olhar sobre registros da última década que mostram como o
                 poder judiciário, a polícia e a mídia têm sido utilizados para
@@ -25,19 +25,8 @@
               </h2>
             </div>
           </v-col>
-          <v-col>
-            <div class="news-tags">
-              <p>Autores: Débora Oliveira</p>
-              <v-chip color="#616161" label class="mr-4">
-                <p class="ma-0 white--text">Alô</p>
-              </v-chip>
-              <v-chip color="#616161" label>
-                <p class="ma-0 white--text">Alô</p>
-              </v-chip>
-            </div>
-          </v-col>
         </v-row>
-        <div class="news-content mt-10">
+        <div class="news-content">
           <p>
             <q>Ninguém gosta de fazer protesto, fazemos porque precisamos</q>,
             diz o presidente do Sindicato dos Petroleiros em Pernambuco
@@ -55,86 +44,99 @@
               prejudicando a locomoção - essa é a criminalização.</q
             >
           </p>
-        </div>
-        <v-carousel
-          cycle
-          height="250"
-          class="my-10"
-          :show-arrows="false"
-          hide-delimiter-background
-          progress-color="#2A2A2A"
-          light
-        >
-          <v-carousel-item>
-            <v-card flat height="100%" color="#EBEBEB">
-              <v-card-title> Entenda: </v-card-title>
-              <v-card-text class="text-justify">
-                <p class="carousel-text">
-                  No Brasil, o DIREITO AO PROTESTO é garantido pela Constituição
-                  por meio de três leis: a liberdade de expressão, a liberdade
-                  de associação e a liberdade de reunião, a mais explícita de
-                  todas. Por meio dela é garantido a todo brasileiro reunir-se
-                  pacificamente, sem armas, em locais abertos ao público
-                  independentemente de autorização, sendo apenas exigido um
-                  aviso prévio à autoridade competente.<br /><br />
-                  ONG Artigo 19
-                </p>
-              </v-card-text>
-            </v-card>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-card flat height="100%" color="#EBEBEB">
-              <v-card-title> O que é o protesto? </v-card-title>
-              <v-card-text class="text-justify">
-                <p class="carousel-text">
-                  Ato coletivo em que pessoas se reúnem publicamente para
-                  expressar uma opinião pública. Uma reação solitária ou em
-                  grupo contra algo ou alguém. Ferramenta de apoio para que as
-                  pessoas sejam ouvidas e também influenciam outras pessoas para
-                  conseguir apoio e pedir por mudanças.
-                </p>
-              </v-card-text>
-            </v-card>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-card flat height="100%" color="#EBEBEB">
-              <v-card-title class="text-left">
-                CRIMINALIZAR: considerar crime, definir ato como crime, tornar
-                criminal.
-              </v-card-title>
-              <v-card-text class="text-justify">
-                <p class="carousel-text">
-                  Os crimes são definidos pelo Poder Legislativo. Depois,
-                  aplicados pelas instituições de controle social: a Polícia, o
-                  Ministério Público, e o Poder Judiciário, Na atuação desses
-                  atores, que elegem quando, como e contra quem agir, se
-                  materializa a criminalização de grupos sociais marginalizados.
-                  Um processo chamado pelo jurista argentino Eugenio Raúl
-                  Zaffaroni de “seletividade”.
-                </p>
-              </v-card-text>
-            </v-card>
-          </v-carousel-item>
-        </v-carousel>
-        <h2 class="content-subtitle my-10">A seletividade</h2>
-        <v-card flat outlined color="#F8F50D">
-          <v-card-text class="black--text">
-            <p>
-              <q>
-                A Justiça existe para permitir que aqueles que não têm voz
-                possam ser ouvidos. Mas, hoje, está se tornando a ferramenta
-                usada por essas pessoas poderosas para reprimir aqueles que não
-                tem voz
-              </q>
-              <br />
-              <br />
-              Clément Voule, relator da ONU sobre Liberdade de Associação e
-              Reunião Pacífica
-            </p>
-          </v-card-text>
-        </v-card>
-        <div class="news-content mt-10">
-          <p>
+          <v-carousel
+            cycle
+            height="100%"
+            class="my-10"
+            :show-arrows="false"
+            hide-delimiter-background
+            progress-color="#2A2A2A"
+            light
+          >
+            <v-carousel-item>
+              <v-card flat height="100%" color="#EBEBEB">
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>Entenda</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
+                <v-card-text class="text-justify mb-10">
+                  <p class="carousel-text">
+                    No Brasil, o DIREITO AO PROTESTO é garantido pela
+                    Constituição por meio de três leis: a liberdade de
+                    expressão, a liberdade de associação e a liberdade de
+                    reunião, a mais explícita de todas. Por meio dela é
+                    garantido a todo brasileiro reunir-se pacificamente, sem
+                    armas, em locais abertos ao público independentemente de
+                    autorização, sendo apenas exigido um aviso prévio à
+                    autoridade competente.<br /><br />
+                    ONG Artigo 19
+                  </p>
+                </v-card-text>
+              </v-card>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-card flat height="100%" color="#EBEBEB">
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>O que é o protesto?</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
+                <v-card-text class="text-justify mb-10">
+                  <p class="carousel-text">
+                    Ato coletivo em que pessoas se reúnem publicamente para
+                    expressar uma opinião pública. Uma reação solitária ou em
+                    grupo contra algo ou alguém. Ferramenta de apoio para que as
+                    pessoas sejam ouvidas e também influenciam outras pessoas
+                    para conseguir apoio e pedir por mudanças.
+                  </p>
+                </v-card-text>
+              </v-card>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-card flat height="100%" color="#EBEBEB">
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>
+                      CRIMINALIZAR: considerar crime, definir ato como crime,
+                      <br />tornar criminal.
+                    </p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
+                <v-card-text class="text-justify mb-10">
+                  <p class="carousel-text">
+                    Os crimes são definidos pelo Poder Legislativo. Depois,
+                    aplicados pelas instituições de controle social: a Polícia,
+                    o Ministério Público, e o Poder Judiciário, Na atuação
+                    desses atores, que elegem quando, como e contra quem agir,
+                    se materializa a criminalização de grupos sociais
+                    marginalizados. Um processo chamado pelo jurista argentino
+                    Eugenio Raúl Zaffaroni de “seletividade”.
+                  </p>
+                </v-card-text>
+              </v-card>
+            </v-carousel-item>
+          </v-carousel>
+          <h2 class="content-subtitle my-15">A seletividade</h2>
+          <p class="font-special mt-10 mb-5">
+            <span class="big-quote">“</span>
+            A Justiça existe para permitir que aqueles que não têm voz possam
+            ser ouvidos. Mas, hoje, está se tornando a ferramenta usada por
+            essas pessoas poderosas para reprimir aqueles que não tem voz
+          </p>
+          <h3
+            class="mt-5 mb-2"
+            style="font: 1.4rem Libre Baskerville, serif; font-weight: bold"
+          >
+            Clément Voule
+          </h3>
+          <p class="font-special">
+            Relator da ONU sobre Liberdade de Associação e Reunião Pacífica
+          </p>
+          <p class="mt-10">
             Cada vez mais leis estão sendo usadas para restringir o espaço que a
             sociedade civil tem para expressar seus direitos. Foi o que defendeu
             o então relator da ONU sobre Liberdade de Associação e Reunião
@@ -154,13 +156,7 @@
             is="script"
             class="flourish-embed flourish-hierarchy"
             src="https://public.flourish.studio/resources/embed.js"
-            data-src="visualisation/6886506"
-          ></div>
-          <div
-            is="script"
-            class="flourish-embed flourish-hierarchy"
-            src="https://public.flourish.studio/resources/embed.js"
-            data-src="visualisation/6887003"
+            data-src="story/960474"
           ></div>
           <p class="mt-10">
             O Partido do Movimento Democrático Brasileiro (PMDB) foi o que mais
@@ -228,17 +224,16 @@
             aguardando o próximo passo.
           </p>
           <iframe
-            class="my-10"
             title="Até onde chegaram os projetos de lei sobre protestos"
             aria-label="table"
             id="datawrapper-chart-CHLER"
-            src="https://datawrapper.dwcdn.net/CHLER/1/"
+            src="https://datawrapper.dwcdn.net/CHLER/2/"
             scrolling="no"
             frameborder="0"
             style="width: 0; min-width: 100% !important; border: none"
-            height="653"
-          >
-          </iframe>
+            height="576"
+            class="my-10"
+          ></iframe>
           <p>
             Enquanto as PLs caminhavam para chegar às ruas, os movimentos
             sociais respondiam às arbitrariedades já presentes nas manifestações
@@ -270,7 +265,7 @@
             nas greves de docentes haja reposição do calendário”.
           </p>
           <p>
-            Para o pesquisador e jornalista Murilo Pantoja, outro integrante do
+            Para o pesquisador e jornalista Murilo Pajola, outro integrante do
             Comitê Contra a Repressão dos Movimentos Sociais de Londrina, o
             direito de greve das organizações sindicais estava sendo violado
             sistematicamente pela Justiça. “O sindicato deflagrava uma greve, a
@@ -313,7 +308,7 @@
           </p>
           <v-carousel
             cycle
-            height="250"
+            height="100%"
             class="my-10"
             :show-arrows="false"
             hide-delimiter-background
@@ -323,9 +318,12 @@
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
                 <v-card-title>
-                  Por que os trabalhadores fazem greve?
+                  <v-col align="left" class="pa-0">
+                    <p>Por que os trabalhadores fazem greve?</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
                 </v-card-title>
-                <v-card-text class="text-justify carousel-text">
+                <v-card-text class="text-justify carousel-text mb-10">
                   <p class="carousel-text">
                     As Greves hoje são regulamentadas pela Lei 7783 de 1989,
                     conhecida como Lei da Greve. Segundo ela, os trabalhadores
@@ -339,8 +337,13 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
-                <v-card-title> O que são greves abusivas? </v-card-title>
-                <v-card-text class="text-justify carousel-text">
+                <v-card-title>
+                  <v-col align="left" class="pa-0">
+                    <p>O que são greves abusivas?</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
+                </v-card-title>
+                <v-card-text class="text-justify carousel-text mb-10">
                   <p class="carousel-text">
                     A greve é legítima quando seus motivos são relacionados a o
                     espectro do trabalho, ou seja, é por reajuste de salários,
@@ -357,9 +360,12 @@
             <v-carousel-item>
               <v-card flat height="100%" color="#EBEBEB">
                 <v-card-title>
-                  Quantos % do efetivo deve funcionar em uma greve?
+                  <v-col align="left" class="pa-0">
+                    <p>Quantos % do efetivo deve funcionar em uma greve?</p>
+                    <v-divider style="background-color: #f8f50d"></v-divider>
+                  </v-col>
                 </v-card-title>
-                <v-card-text class="text-justify">
+                <v-card-text class="text-justify carousel-text mb-10">
                   <p class="carousel-text">
                     Depende de cada caso. Segundo a Lei, em serviços essenciais,
                     metade dos trabalhadores devem estar ativos, mas isso varia
@@ -471,7 +477,7 @@
               alt="Manifestantes saíram em passeata pelo centro de São Paulo"
               style="width: 100%"
             />
-            <figcaption>
+            <figcaption class="text-right" style="font-size: 0.8rem">
               Manifestantes saíram em passeata pelo centro de São Paulo -
               Rodrigo Gomes | RBA
             </figcaption>
@@ -491,7 +497,7 @@
             >, justifica Hugo Fanton, jornalista e representante do grupo.
             <q
               >Com a pandemia e a situação dos presos resolvida, tivemos que
-              focar em outras demandas, como o ‘Despejo 0’</q
+              focar em outras demandas, como o Despejo 0</q
             >
             , completa.
           </p>
@@ -503,26 +509,20 @@
             faz parte do dia a dia de quem protesta.
           </p>
           <h2 class="content-subtitle my-10">O discurso da maçã podre</h2>
-          <v-card
-            class="mb-10"
-            flat
-            outlined
-            color="#F8F50D"
+          <p class="font-special mt-10 mb-5">
+            <span class="big-quote">“</span>
+            Gloriosa Polícia Civil / Em defesa de quem precisar / Gloriosa
+            Polícia Civil / Nossa Lei sabes honrar
+          </p>
+          <h3
+            class="mt-5 mb-2"
+            style="font: 1.4rem Libre Baskerville, serif; font-weight: bold"
           >
-            <v-card-text class="black--text text-center">
-              <p>
-                <q>
-                  Gloriosa Polícia Civil / Em defesa de quem precisar / Gloriosa
-                  Polícia Civil / Nossa Lei sabes honrar
-                </q>
-                <br />
-                <br />
-                Hino da Polícia Civil do Rio de Janeiro, <br />
-                Composição: José Ribamar Serra e Silva - Sargento CBMERJ - RG
-                00438
-              </p>
-            </v-card-text>
-          </v-card>
+            Hino da Polícia Civil do Rio de Janeiro
+          </h3>
+          <p class="font-special mb-10">
+            Composição: José Ribamar Serra e Silva - Sargento CBMERJ - RG 00438
+          </p>
           <p>
             Quando a repressão não vem por meio do mal uso da lei, ela é sentida
             no ato. No tiro de bala de borracha que deixou sequelas, no abuso
@@ -640,28 +640,60 @@
           <h2 class="content-subtitle my-10">
             Morreu na contramão, atrapalhando o tráfego
           </h2>
-          <v-card outlined>
+          <!-- <v-card flat class="my-10">
             <v-card-text>
               <v-container>
-                <v-row >
-                  <img class="content-manchete"  src="../assets/manchete/1.png">
-                  <img  class="content-manchete" src="../assets/manchete/2.jpeg">
-                  <img class="content-manchete"  src="../assets/manchete/3.png">
-                  <img class="content-manchete"  src="../assets/manchete/4.png">
-                  <img class="content-manchete"  src="../assets/manchete/5.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/6.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/7.png">
-                  <img class="content-manchete"  src="../assets/manchete/8.jpg">
-                  <img class="content-manchete"  src="../assets/manchete/9.jpg">
-                  <img  class="content-manchete" src="../assets/manchete/10.png">
-                  <img  class="content-manchete" src="../assets/manchete/11.png">
-                  <img  class="content-manchete" src="../assets/manchete/12.png">
-                  <img  class="content-manchete" src="../assets/manchete/13.png">
-                  <img  class="content-manchete" src="../assets/manchete/14.png">
+                <v-row>
+                  <v-col class="manchete">
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/1.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/2.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/3.jpg"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/4.jpg"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/5.jpg"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/6.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/7.jpg"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/8.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/9.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/10.png"
+                    />
+                    <img
+                      class="content-manchete img-fluid"
+                      src="../assets/manchete/11.png"
+                    />
+                  </v-col>
                 </v-row>
               </v-container>
             </v-card-text>
-          </v-card>
+          </v-card> -->
           <p>
             As manchetes acima foram colhidas de capas de jornais, trechos de
             reportagens e leads (o primeiro e mais importante parágrafos das
@@ -682,7 +714,7 @@
           </p>
           <p>
             Isto, segundo a professora e pesquisadora em Comunicação e Semiótica
-            Denise Paiero, é um formato de narrativa sobre protestos banalizado
+            Denise Paiero, é um formato de narrativa sobre protestos banalizados
             na mídia. Quando os atos que rompem com o curso das cidades recebem
             mais destaques nos grandes veículos de comunicação brasileiros pelos
             problemas que causaram do que pelo motivo do protesto em si. Em seu
@@ -747,9 +779,12 @@
           <h2 class="content-subtitle my-10">Terroristas, vândalos</h2>
           <p>
             Segundo a pesquisadora, o MST é um dos movimentos sociais mais
-            criminalizados atualmente. <q></q> "A gente percebe movimentos em
-            que a imprensa os coloca como ‘terroristas’. Quando convém, ela se
-            utiliza disso, “esses terroristas, esses vândalos”, explica Denise.
+            criminalizados atualmente.
+            <q
+              >A gente percebe movimentos em que a imprensa os coloca como
+              ‘terroristas’. Quando convém, ela se utiliza disso, esses
+              terroristas, esses vândalos</q
+            >, explica Denise.
           </p>
           <p>
             Ao buscar por “criminalização”, “mídia” e “mst” no diretório de
@@ -830,12 +865,7 @@
               o olhar das pessoas para conseguir a simpatia delas</q
             >.
           </p>
-          <v-card
-            class="mb-10"
-            flat
-            outlined
-            color="#F8F50D"
-          >
+          <v-card class="mb-10" flat outlined color="#F8F50D">
             <v-card-title class="black--text"> Fontes: </v-card-title>
             <v-card-text class="black--text">
               <p>
@@ -848,8 +878,13 @@
             </v-card-text>
           </v-card>
         </div>
+        <v-btn @click="goToSnews()" text color="#2A2A2A"
+          >Rostos da Rua
+          <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn
+        >
       </v-container>
     </main>
+    <footer></footer>
   </div>
 </template>
 
@@ -867,8 +902,6 @@
     }
   });
 })();
-
-import { apiCreateNews } from "../services";
 
 export default {
   name: "ViolenceView",
@@ -888,97 +921,145 @@ export default {
   }),
 
   methods: {
-    getFormData(object) {
-      const formData = new FormData();
-      Object.keys(object).forEach((key) => formData.append(key, object[key]));
-      return formData;
-    },
-
-    createNews() {
-      this.tags.format = this.selectedFormat;
-      this.tags.theme = this.theme;
-
-      let data = new FormData();
-
-      data.append("title", this.title);
-      data.append("subtitle", this.subtitle);
-      data.append("image", this.image);
-      data.append("author", this.author);
-      data.append("is_main_news", this.isMainNews);
-      Object.keys(this.tags).forEach((key) => data.append(key, this.tags[key]));
-      data.append("news", this.newsDescription);
-      data.append("fonts", this.fonts);
-
-      apiCreateNews(data).then((response) => {
-        alert(response);
-      });
+    goToSnews() {
+      this.$router.push("/snews");
+      window.scrollTo(0, 0);
     },
   },
 };
 </script>
 
-<style>
-.news-sheet {
-  padding: 15rem;
-  background-color: #f8f8f8;
-  width: 100rem;
-}
+<style lang="sass">
+.big-quote
+  font-size: 3rem
+  color: #F8F50D
 
-.news-banner {
-  width: 100%;
-  height: 25rem;
-  object-fit: cover;
-  position: relative;
-  z-index: 0;
-}
+.font-special
+  color: #8e8e8e
+  font: 1.3rem "Libre Baskerville", serif
+  line-height: 1.6rem
 
-.news-title {
-  text-align: left;
-  padding: 1rem;
-  width: 30rem;
-  color: #2a2a2a;
-  font: 1rem "Libre Baskerville", serif;
-  background: #f8f50d;
-  font-weight: bold;
-  position: relative;
-  top: -20%;
-  z-index: 1;
-}
+.news-sheet
+  padding: 0 2rem
+  background-color: #f8f8f8
 
-.news-subtitle {
-  text-align: justify;
-  color: #616161;
-  font: 0.8rem "Open Sans", sans-serif;
-}
+.news-title
+  text-align: center
+  padding: 1rem
+  color: #2a2a2a
+  font: 1rem "Libre Baskerville", serif
+  background: #f8f50d
+  font-weight: bold
+  position: relative
+  top: -20%
+  z-index: 1
 
-.news-tags {
-  margin-top: 5rem;
-  color: #616161;
-  font: 1.2rem "Open Sans", sans-serif;
-}
+.news-banner
+  width: 100%
+  height: 25rem
+  object-fit: cover
+  position: relative
+  z-index: 0
 
-.news-tags h3 {
-  margin-bottom: 5rem;
-}
+.news-subtitle
+  text-align: center
+  color: #616161
+  font: 0.8rem "Open Sans", sans-serif
 
-.news-content {
-  text-align: justify;
-  color: #616161;
-  font: 1rem "Open Sans", sans-serif;
-}
+.news-tags
+  margin-top: 5rem
+  color: #616161
+  font: 1rem "Open Sans", sans-serif
 
-.content-subtitle {
-  color: #616161;
-  text-align: justify;
-}
+  h3
+    margin-bottom: 5rem
 
-.content-manchete{
-  position: relative;
-  width: 25%;
-  height: 25%;
-}
+.news-content
+  text-align: justify
+  color: #616161
+  font: 1rem "Open Sans", sans-serif
 
-.carousel-text {
-  font-size: 1rem;
-}
+.content-subtitle
+  color: #616161
+  text-align: justify
+
+.manchete
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.content-manchete
+  margin: 2rem 0
+  max-width: 100%
+  height: auto
+
+@keyframes fade
+  0%,
+  100%
+    opacity: 0
+
+  50%
+    opacity: 1
+
+@media only screen and (min-width: 768px)
+  .news-sheet
+    padding: 15rem
+    background-color: #f8f8f8
+
+  .news-banner
+    width: 100%
+    height: 25rem
+    object-fit: cover
+    position: relative
+    z-index: 0
+
+  .news-title
+    padding: 1rem
+    color: #2a2a2a
+    font: 1rem "Libre Baskerville", serif
+    background: #f8f50d
+    font-weight: bold
+    position: relative
+    top: -20%
+    z-index: 1
+
+  .news-subtitle
+    text-align: center
+    color: #616161
+    font: 0.8rem "Open Sans", sans-serif
+
+  .news-tags
+    margin-top: 5rem
+    color: #616161
+    font: 1rem "Open Sans", sans-serif
+
+    h3
+      margin-bottom: 5rem
+
+  .news-content
+    padding: 0
+    text-align: justify
+    color: #616161
+    font: 1rem "Open Sans", sans-serif
+    line-height: 1.6rem
+
+  .content-subtitle
+    color: #616161
+    text-align: center
+
+  .carousel-text
+    font-size: 1rem
+
+  .content-manchete
+    max-width: 100%
+    height: auto
+
+  @keyframes fade
+    0%,
+    100%
+      opacity: 0
+
+    50%
+      opacity: 1
 </style>
+ 

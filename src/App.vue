@@ -1,6 +1,9 @@
 <template>
   <v-app>
     <router-view/>
+    <footer>
+      <footer-component></footer-component>
+    </footer>
   </v-app>
 </template>
 
@@ -21,7 +24,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background: #EBEBEB;
+  background: #f8f8f8;
+
 }
 
 
