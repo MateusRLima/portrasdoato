@@ -155,6 +155,10 @@
             protestos geralmente possuem mais de uma pauta.
           </p>
         </div>
+        <v-btn class="mt-10" @click="goToPnews()" text color="#2A2A2A"
+          >Protesto: o que é permitido por lei?
+          <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn
+        >
       </v-container>
     </main>
   </div>
@@ -163,6 +167,14 @@
 <script>
 export default {
   name: "WomanView",
+
+  methods: {
+    goToPnews() {
+      this.$router.push("/pnews");
+      window.scrollTo(0, 0);
+    },
+  }
+
 };
 </script>
 
@@ -269,12 +281,12 @@ export default {
   }
 
   .wnews-title {
-    padding: 1rem;
     color: #2a2a2a;
-    font: 1rem "Libre Baskerville", serif;
+    font: 0.9rem "Libre Baskerville", serif;
     background: #f8f50d;
     font-weight: bold;
     position: relative;
+    width: 100%;
     top: -20%;
     z-index: 1;
   }

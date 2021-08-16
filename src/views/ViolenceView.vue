@@ -946,7 +946,7 @@ export default {
   text-align: center
   padding: 1rem
   color: #2a2a2a
-  font: 1rem "Libre Baskerville", serif
+  font: 0.9rem "Libre Baskerville", serif
   background: #f8f50d
   font-weight: bold
   position: relative
@@ -1015,7 +1015,7 @@ export default {
   .news-title
     padding: 1rem
     color: #2a2a2a
-    font: 1rem "Libre Baskerville", serif
+    font: 0.9rem "Libre Baskerville", serif
     background: #f8f50d
     font-weight: bold
     position: relative

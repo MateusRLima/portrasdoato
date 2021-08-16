@@ -167,8 +167,8 @@
             nação e que nessa democracia eu sou respeitado.”
           </blockquote>
         </div>
-        <v-btn class="mt-10" @click="goToPnews()" text color="#2A2A2A"
-          >Protesto: o que é permitido por lei?
+        <v-btn class="mt-10" @click="goToWnews()" text color="#2A2A2A"
+          >Mulheres no centro: a década de protestos no campo
           <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn
         >
       </v-container>
@@ -181,8 +181,8 @@ export default {
   name: "FrancisView",
 
   methods: {
-    goToPnews() {
-      this.$router.push("/pnews");
+    goToWnews() {
+      this.$router.push("/wnews");
       window.scrollTo(0, 0);
     },
   },
