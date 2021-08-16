@@ -163,7 +163,7 @@
                           <p class="ma-0">Reivindicações</p>
                         </v-chip>
                       </div>
-                      <img class="news-image" style="object-position: 80% 50%" src="../assets/cards/materia3.jpg">
+                      <img class="news-image" style="object-position: 80% 50%" src="../assets/cards/materia3.png">
                     </v-col>
                   </v-row>
                 </v-container>
