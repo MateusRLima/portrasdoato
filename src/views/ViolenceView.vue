@@ -7,25 +7,25 @@
       style="z-index: 2"
     ></header-component>
     <main class="mt-16">
-      <div style="position: relative;">
-          <img class="news-banner" src="../assets/materia1.jpg" />
-          <!-- <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Sindicalistas ocupam Brasília, em ato pelos direitos dos/as trabalhadores/as e enfrentam repressão e violência policial, 2015. Foto: Reprodução/Zeca Ribeiro</div> -->
+      <div style="position: relative">
+        <img class="news-banner" src="../assets/materia1.jpg" />
+        <!-- <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Sindicalistas ocupam Brasília, em ato pelos direitos dos/as trabalhadores/as e enfrentam repressão e violência policial, 2015. Foto: Reprodução/Zeca Ribeiro</div> -->
       </div>
       <v-container class="pt-0 news-sheet">
-          <v-row>
-            <v-col>
-              <div class="news-title">
-                <h1>Trabalhadores no ponto, criminosos nas ruas</h1>
-              </div>
-              <div class="news-subtitle mb-10">
-                <h2>
-                  Um olhar sobre registros da última década que mostram como o
-                  poder judiciário, a polícia e a mídia têm sido utilizados para
-                  ‘criminalizar’ quem protesta
-                </h2>
-              </div>
-            </v-col>
-          </v-row>
+        <v-row>
+          <v-col>
+            <div class="news-title">
+              <h1>Trabalhadores no ponto, criminosos nas ruas</h1>
+            </div>
+            <div class="news-subtitle mb-10">
+              <h2>
+                Um olhar sobre registros da última década que mostram como o
+                poder judiciário, a polícia e a mídia têm sido utilizados para
+                ‘criminalizar’ quem protesta
+              </h2>
+            </div>
+          </v-col>
+        </v-row>
         <div class="news-content">
           <p>
             <q>Ninguém gosta de fazer protesto, fazemos porque precisamos</q>,
@@ -99,8 +99,10 @@
               <v-card flat height="100%" color="#EBEBEB">
                 <v-card-title>
                   <v-col align="left" class="pa-0">
-                    <p>CRIMINALIZAR: considerar crime,  definir ato como crime, <br/>tornar
-                      criminal.</p>
+                    <p>
+                      CRIMINALIZAR: considerar crime, definir ato como crime,
+                      <br />tornar criminal.
+                    </p>
                     <v-divider style="background-color: #f8f50d"></v-divider>
                   </v-col>
                 </v-card-title>
@@ -119,24 +121,20 @@
             </v-carousel-item>
           </v-carousel>
           <h2 class="content-subtitle my-15">A seletividade</h2>
-          <p
-            class="font-special mt-10 mb-5"
-          >
-          <span class="big-quote">“</span>
-              A Justiça existe para permitir que aqueles que não têm voz
-              possam ser ouvidos. Mas, hoje, está se tornando a ferramenta
-              usada por essas pessoas poderosas para reprimir aqueles que
-              não tem voz
+          <p class="font-special mt-10 mb-5">
+            <span class="big-quote">“</span>
+            A Justiça existe para permitir que aqueles que não têm voz possam
+            ser ouvidos. Mas, hoje, está se tornando a ferramenta usada por
+            essas pessoas poderosas para reprimir aqueles que não tem voz
           </p>
           <h3
             class="mt-5 mb-2"
-            style="font: 1.5rem Libre Baskerville, serif; font-weight: bold"
+            style="font: 1.4rem Libre Baskerville, serif; font-weight: bold"
           >
-             Clément Voule
+            Clément Voule
           </h3>
           <p class="font-special">
-            Relator da ONU sobre Liberdade de Associação e
-              Reunião Pacífica
+            Relator da ONU sobre Liberdade de Associação e Reunião Pacífica
           </p>
           <p class="mt-10">
             Cada vez mais leis estão sendo usadas para restringir o espaço que a
@@ -158,13 +156,7 @@
             is="script"
             class="flourish-embed flourish-hierarchy"
             src="https://public.flourish.studio/resources/embed.js"
-            data-src="visualisation/6886506"
-          ></div>
-          <div
-            is="script"
-            class="flourish-embed flourish-hierarchy"
-            src="https://public.flourish.studio/resources/embed.js"
-            data-src="visualisation/6887003"
+            data-src="story/960474"
           ></div>
           <p class="mt-10">
             O Partido do Movimento Democrático Brasileiro (PMDB) foi o que mais
@@ -232,17 +224,16 @@
             aguardando o próximo passo.
           </p>
           <iframe
-            class="my-10"
             title="Até onde chegaram os projetos de lei sobre protestos"
             aria-label="table"
             id="datawrapper-chart-CHLER"
-            src="https://datawrapper.dwcdn.net/CHLER/1/"
+            src="https://datawrapper.dwcdn.net/CHLER/2/"
             scrolling="no"
             frameborder="0"
             style="width: 0; min-width: 100% !important; border: none"
-            height="653"
-          >
-          </iframe>
+            height="576"
+            class="my-10"
+          ></iframe>
           <p>
             Enquanto as PLs caminhavam para chegar às ruas, os movimentos
             sociais respondiam às arbitrariedades já presentes nas manifestações
@@ -274,7 +265,7 @@
             nas greves de docentes haja reposição do calendário”.
           </p>
           <p>
-            Para o pesquisador e jornalista Murilo Pantoja, outro integrante do
+            Para o pesquisador e jornalista Murilo Pajola, outro integrante do
             Comitê Contra a Repressão dos Movimentos Sociais de Londrina, o
             direito de greve das organizações sindicais estava sendo violado
             sistematicamente pela Justiça. “O sindicato deflagrava uma greve, a
@@ -328,7 +319,7 @@
               <v-card flat height="100%" color="#EBEBEB">
                 <v-card-title>
                   <v-col align="left" class="pa-0">
-                    <p> Por que os trabalhadores fazem greve? </p>
+                    <p>Por que os trabalhadores fazem greve?</p>
                     <v-divider style="background-color: #f8f50d"></v-divider>
                   </v-col>
                 </v-card-title>
@@ -348,7 +339,7 @@
               <v-card flat height="100%" color="#EBEBEB">
                 <v-card-title>
                   <v-col align="left" class="pa-0">
-                    <p> O que são greves abusivas? </p>
+                    <p>O que são greves abusivas?</p>
                     <v-divider style="background-color: #f8f50d"></v-divider>
                   </v-col>
                 </v-card-title>
@@ -370,7 +361,7 @@
               <v-card flat height="100%" color="#EBEBEB">
                 <v-card-title>
                   <v-col align="left" class="pa-0">
-                    <p> Quantos % do efetivo deve funcionar em uma greve? </p>
+                    <p>Quantos % do efetivo deve funcionar em uma greve?</p>
                     <v-divider style="background-color: #f8f50d"></v-divider>
                   </v-col>
                 </v-card-title>
@@ -506,7 +497,7 @@
             >, justifica Hugo Fanton, jornalista e representante do grupo.
             <q
               >Com a pandemia e a situação dos presos resolvida, tivemos que
-              focar em outras demandas, como o ‘Despejo 0’</q
+              focar em outras demandas, como o Despejo 0</q
             >
             , completa.
           </p>
@@ -518,22 +509,19 @@
             faz parte do dia a dia de quem protesta.
           </p>
           <h2 class="content-subtitle my-10">O discurso da maçã podre</h2>
-          <p
-            class="font-special mt-10 mb-5"
-          >
-          <span class="big-quote">“</span>
-              Gloriosa Polícia Civil / Em defesa de quem precisar / Gloriosa
-              Polícia Civil / Nossa Lei sabes honrar
+          <p class="font-special mt-10 mb-5">
+            <span class="big-quote">“</span>
+            Gloriosa Polícia Civil / Em defesa de quem precisar / Gloriosa
+            Polícia Civil / Nossa Lei sabes honrar
           </p>
           <h3
             class="mt-5 mb-2"
-            style="font: 1.5rem Libre Baskerville, serif; font-weight: bold"
+            style="font: 1.4rem Libre Baskerville, serif; font-weight: bold"
           >
-             Hino da Polícia Civil do Rio de Janeiro
+            Hino da Polícia Civil do Rio de Janeiro
           </h3>
           <p class="font-special mb-10">
-            Composição: José Ribamar Serra e Silva - Sargento CBMERJ - RG
-            00438
+            Composição: José Ribamar Serra e Silva - Sargento CBMERJ - RG 00438
           </p>
           <p>
             Quando a repressão não vem por meio do mal uso da lei, ela é sentida
@@ -726,7 +714,7 @@
           </p>
           <p>
             Isto, segundo a professora e pesquisadora em Comunicação e Semiótica
-            Denise Paiero, é um formato de narrativa sobre protestos banalizado
+            Denise Paiero, é um formato de narrativa sobre protestos banalizados
             na mídia. Quando os atos que rompem com o curso das cidades recebem
             mais destaques nos grandes veículos de comunicação brasileiros pelos
             problemas que causaram do que pelo motivo do protesto em si. Em seu
@@ -791,9 +779,12 @@
           <h2 class="content-subtitle my-10">Terroristas, vândalos</h2>
           <p>
             Segundo a pesquisadora, o MST é um dos movimentos sociais mais
-            criminalizados atualmente. <q></q> "A gente percebe movimentos em
-            que a imprensa os coloca como ‘terroristas’. Quando convém, ela se
-            utiliza disso, “esses terroristas, esses vândalos”, explica Denise.
+            criminalizados atualmente.
+            <q
+              >A gente percebe movimentos em que a imprensa os coloca como
+              ‘terroristas’. Quando convém, ela se utiliza disso, esses
+              terroristas, esses vândalos</q
+            >, explica Denise.
           </p>
           <p>
             Ao buscar por “criminalização”, “mídia” e “mst” no diretório de
@@ -887,12 +878,13 @@
             </v-card-text>
           </v-card>
         </div>
-        <v-btn @click="goToSnews()" text color="#2A2A2A">Rostos da Rua <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
+        <v-btn @click="goToSnews()" text color="#2A2A2A"
+          >Rostos da Rua
+          <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn
+        >
       </v-container>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </div>
 </template>
 
@@ -929,25 +921,23 @@ export default {
   }),
 
   methods: {
-    goToSnews(){
-      this.$router.push("/snews")
-      window.scrollTo(0,0);
-    }
+    goToSnews() {
+      this.$router.push("/snews");
+      window.scrollTo(0, 0);
+    },
   },
 };
 </script>
 
 <style lang="sass">
- .big-quote
-    font-size: 3rem
-    color: #F8F50D
-    
+.big-quote
+  font-size: 3rem
+  color: #F8F50D
 
-.font-special 
+.font-special
   color: #8e8e8e
   font: 1.3rem "Libre Baskerville", serif
   line-height: 1.6rem
-
 
 .news-sheet
   padding: 0 2rem
@@ -1023,7 +1013,7 @@ export default {
     position: relative
     z-index: 0
 
-  .news-title 
+  .news-title
     padding: 1rem
     color: #2a2a2a
     font: 1rem "Libre Baskerville", serif
@@ -1032,7 +1022,6 @@ export default {
     position: relative
     top: -20%
     z-index: 1
-  
 
   .news-subtitle
     text-align: center

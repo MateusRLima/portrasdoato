@@ -34,7 +34,7 @@
         </v-row>
         <div class="news-content">
           <p>
-           Esta seria a história de Deyvid Bacelar, Diretor Geral da Federação Única dos Petroleiros, técnico de segurança do trabalho e ex-representante dos funcionários da Petrobras na Bahia. Era uma madrugada de novembro, em 2015, quando Deyvid foi preso pela Polícia Militar, sob acusação de desacato ao tentar evitar que um colega fosse preso. Na entrada da refinaria Landulpho Alves (Rlam), em um dos municípios da região metropolitana de Salvador, eles protestavam contra a venda de ativos da Petrobrás, o que, para os manifestantes, representaria uma privatização da companhia.
+           Esta seria a história de Deyvid Bacelar, Diretor Geral da Federação Única dos Petroleiros, técnico de segurança do trabalho e ex-representante dos funcionários da Petrobras na Bahia. Era uma madrugada de novembro, em 2015, quando Deyvid foi preso pela Polícia Militar, sob acusação de desacato ao tentar evitar que um colega fosse preso. Na entrada da refinaria Landulpho Alves (RLAM), em um dos municípios da região metropolitana de Salvador, eles protestavam contra a venda de ativos da Petrobrás, o que, para os manifestantes, representaria uma privatização da companhia.
           </p>
           <p>
             A pessoa que ele tentava proteger era o repórter fotográfico Wandaick Costa. Há mais de 18 anos ele presta serviços para sindicatos, movimentos sociais e cobre ações de protesto. Ele foi o centro dessa situação que culminou em ambos rodando madrugada afora dentro de uma viatura, rondando os matagais que cercavam a área de produção da Petrobras.
@@ -46,7 +46,7 @@
             03 de novembro de 2015
           </p>
           <p>
-            No final de novembro de 2015, houve uma mobilização nacional dos petroleiros com o objetivo de pressionar a Petrobras a rever seu plano de venda de ativos e a retomada de investimentos. Segundo balanço divulgado pela Federação Única dos Petroleiros, cerca de 58 plataformas e unidades de serviço em todo país foram mobilizadas. Das refinarias, 11 ficaram paralisadas, dentre elas, a Rlam, maior e mais importante do Estado da Bahia.
+            No final de novembro de 2015, houve uma mobilização nacional dos petroleiros com o objetivo de pressionar a Petrobras a rever seu plano de venda de ativos e a retomada de investimentos. Segundo balanço divulgado pela Federação Única dos Petroleiros, cerca de 58 plataformas e unidades de serviço em todo país foram mobilizadas. Das refinarias, 11 ficaram paralisadas, dentre elas a RLAM, maior e mais importante do Estado da Bahia.
           </p>
           <p>
             Foi lá que tudo aconteceu. 

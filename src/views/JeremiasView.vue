@@ -34,17 +34,16 @@
         <div class="news-content">
           <p>
             Jeremias Nascimento, 45 anos, é cobrador da empresa Caxangá, em
-            Recife, desde 2011, e diretor do Sindicato dos Rodoviários
+            Recife, desde 2011 e diretor do Sindicato dos Rodoviários
             atualmente. No ano que entrou, participou também de seu primeiro
             protesto. Não queria ser explorado. Ele fala de sua trajetória
             trabalhista com vigor, muita revolta e ao mesmo tempo uma paixão e
-            orgulho de si, por não desistir.
+            orgulho de si por não desistir.
           </p>
           <p class="mb-10">
             A luta dos rodoviários recifenses mais parece um disco arranhado que
-            uma linha do tempo. Ano após ano, eles reivindicam - de novo -
-            melhores salários, de novo condições de trabalho mais humanas, de
-            novo preservação dos direitos trabalhistas e de seus empregos.
+            uma linha do tempo. Ano após ano, eles reivindicam
+            melhores salários, condições de trabalho mais humanas, preservação dos direitos trabalhistas e de seus empregos.
           </p>
           <p>Nada muda, mas piora.</p>
           <p>

@@ -8,8 +8,8 @@
     ></header-component>
     <main class="mt-16">
       <div style="position: relative;">
-          <img class="wnews-banner" src="../assets/materia3.jpg" />
-          <div class="text-left" style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Trabalhadores essenciais em manifestação exigindo melhores condições de trabalho e em repúdio às ações do governo Bolsonaro de incentivo ao fim do isolamento social. São Paulo, 2020. <br /> Foto: Reprodução/Vanessa Nicolav</div>
+        <img class="wnews-banner" src="../assets/materia3.jpg" />
+        <div class="text-left" style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Trabalhadores essenciais em manifestação exigindo melhores condições de trabalho e em repúdio às ações do governo Bolsonaro de incentivo ao fim do isolamento social. São Paulo, 2020. <br /> Foto: Reprodução/Vanessa Nicolav</div>
       </div>
       <v-container class="pt-0 wnews-sheet">
         <v-row>

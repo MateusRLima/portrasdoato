@@ -7,12 +7,23 @@
       style="z-index: 2"
     ></header-component>
     <main class="mt-16">
-      <div style="position: relative;">
-        <img
-          class="news-banner"
-          src="../assets/1.png"
-        />
-        <div style="text-align: left;position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Protesto de profissionais da saúde em frente ao Hospital da Restauração, no Recife, em 2020. Francis é o homem em frente a viatura, no lado direito da foto. <br /> Foto: Arquivo Pessoal/Francis Herbert</div>
+      <div style="position: relative">
+        <img class="news-banner" src="../assets/1.png" />
+        <div
+          style="
+            text-align: left;
+            position: absolute;
+            top: 10px;
+            color: grey;
+            font-size: 0.8rem;
+            left: 10px;
+          "
+        >
+          Protesto de profissionais da saúde em frente ao Hospital da
+          Restauração, no Recife, em 2020. Francis é o homem em frente a
+          viatura, no lado direito da foto. <br />
+          Foto: Arquivo Pessoal/Francis Herbert
+        </div>
       </div>
       <v-container class="pt-0 news-sheet">
         <v-row>
@@ -71,14 +82,19 @@
             ‘enforca gato’, a força foi tanta que o rapaz perdeu a consciência
             na hora e quase teve uma parada cardíaca.
           </p>
-          <video class="ml-5 float-right" width="75%" controls>
-            <source
-              src="../assets/francis-video.mp4"
-              type="video/mp4"
-            />
-            Seu navegador não suporta este vídeo, tente uma versão mais
-            atualizada.
-          </video>
+          <div class="my-10" >
+            <video width="100%" controls>
+              <source src="../assets/francis-video.mp4" type="video/mp4" />
+              Seu navegador não suporta este vídeo, tente uma versão mais
+              atualizada.
+            </video>
+            <p class="text-right" style="font-size: 0.8rem">
+              O Sindicato Profissional dos Auxiliares e
+              Técnicos de Enfermagem de Pernambuco (Satenpe) registrou a
+              atividade policial durante o protesto, incluindo o momento em que
+              o filho de Herbert foi imobilizado pelo pescoço.
+            </p>
+          </div>
           <p>
             <q
               >Eu não pude fazer nada... só vi meu filho sendo derrubado como se
@@ -151,7 +167,10 @@
             nação e que nessa democracia eu sou respeitado.”
           </blockquote>
         </div>
-        <v-btn class="mt-10" @click="goToPnews()" text color="#2A2A2A">Protesto: o que é permitido por lei? <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
+        <v-btn class="mt-10" @click="goToPnews()" text color="#2A2A2A"
+          >Protesto: o que é permitido por lei?
+          <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn
+        >
       </v-container>
     </main>
   </div>
@@ -162,10 +181,10 @@ export default {
   name: "FrancisView",
 
   methods: {
-    goToPnews(){
-      this.$router.push("/pnews")
-      window.scrollTo(0,0);
-    }
+    goToPnews() {
+      this.$router.push("/pnews");
+      window.scrollTo(0, 0);
+    },
   },
 };
 </script>

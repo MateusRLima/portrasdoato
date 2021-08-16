@@ -152,7 +152,7 @@
                       <h4 class="news-list-subtitle">
                         “É melhor morrer na luta que morrer de fome”
                       </h4>
-                      <v-btn class="pl-0" small @click="goToPnews()" text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
+                      <v-btn class="pl-0" small @click="goToWnews()" text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
                     </v-col>
                     <v-col cols="6" class="pa-0">
                       <div class="d-flex justify-center chip-group">
@@ -281,6 +281,11 @@ export default {
 
     goToSnews(){
       this.$router.push("/snews")
+      window.scrollTo(0,0);
+    },
+
+    goToWnews(){
+      this.$router.push("/wnews")
       window.scrollTo(0,0);
     }
   }

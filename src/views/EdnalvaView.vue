@@ -19,9 +19,7 @@
             left: 10px;
           "
         >
-          Ednalva Franco em encontro mundial de movimentos populares, na
-          Bolívia, em 2015. <br />
-          Foto: Arquivo Pessoal/ Ednalva Franco
+          Ednalva Franco em encontro mundial de movimentos populares, na Bolívia, em 2015.<br /> Ednalva é a primeira do canto direito. <br/> Foto: Reprodução/Arquivo Pessoal
         </div>
       </div>
       <v-container class="pt-0 news-sheet">
@@ -34,8 +32,8 @@
         </v-row>
         <div class="news-content">
           <p>
-            Ednalva Franco, 49 anos, é mãe de três filhos, e ex-militante do
-            Movimento de Moradia Para Todos (MMPT) desde os seus 17 anos. Sempre
+            Ednalva Franco, 49 anos, é mãe de três filhos e ex-militante do
+            Movimento de Moradia Para Todos (MMPT), desde os seus 17 anos. Sempre
             foi uma pessoa de linha de frente. Tem três graduações e três
             pós-graduações. Estudou Direito, Pedagogia, Teologia e é
             Pós-graduada em Defensoria Pública e Tributária e em Docência no
@@ -126,7 +124,7 @@
           <p>
             Me prenderam sem provas, porque eu nunca entrei naquele prédio. As
             acusações eram sem nexo e sentido. Eles tinham uma lista de quem
-            iriam prender. Carmen [colocar aqui quem é essa] estava nela, mas
+            iriam prender. Carmen [coordenadora do MTST] estava nela, mas
             ela não conseguiram prender. Então levaram sua filha, Preta
             Ferreira, seu filho Sidnei e a Angélica. Ela nem liderança era, só
             porque falava comigo ao telefone foi presa também.
@@ -289,7 +287,7 @@
             Um processo criado para prejudicar uma mulher de 49 anos que militou
             a vida inteira. Cheguei aos 49, depois de tanta luta, depois de
             tanto acreditar que eu podia fazer a diferença, tomei um tiro de
-            bala, fui agredida, até com jato de água. Eu tenho várias marcas no
+            bala, fui agredida até com jato de água. Eu tenho várias marcas no
             corpo, nada disso me derrubou, mas isso que fizeram…
           </p>
           <p>
