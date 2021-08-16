@@ -131,11 +131,10 @@
               </v-card-text>
               </v-card>
             </v-slide-item>
-            <!-- <v-slide-item
+            <v-slide-item
               light
             >
               <v-card
-                @click="goToPnews()"
                 tile
                 color="#FCFCFC"
                 class="slide-item mr-5 pa-2"
@@ -144,14 +143,14 @@
                 <v-container class="pa-0">
                   <v-row align="flex-start">
                     <v-col cols="6" class="pb-0 px-6 pt-6" align="left">
-                      <v-chip outlined color="#2A2A2A" class="mb-5" label>
+                      <v-chip outlined color="#2A2A2A" class="mb-3" label>
                         7min de leitura
                       </v-chip>
                       <h3 class="news-list-title">
-                        Protesto: o que é permitido por lei?
+                        Mulheres no centro: a década de protestos no campo
                       </h3>
                       <h4 class="news-list-subtitle">
-                        Entenda seus direitos como manifestante e saiba...
+                        “É melhor morrer na luta que morrer de fome”
                       </h4>
                       <v-btn class="pl-0" small @click="goToPnews()" text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
                     </v-col>
@@ -164,18 +163,17 @@
                           <p class="ma-0">Reivindicações</p>
                         </v-chip>
                       </div>
-                      <img class="news-image" style="object-position: 80% 50%" src="../assets/cards/materia4.jpg">
+                      <img class="news-image" style="object-position: 80% 50%" src="../assets/cards/materia3.jpg">
                     </v-col>
                   </v-row>
                 </v-container>
               </v-card-text>
               </v-card>
-            </v-slide-item> -->
+            </v-slide-item>
            <v-slide-item
               light
             >
               <v-card
-                @click="goToPnews()"
                 tile
                 color="#FCFCFC"
                 class="slide-item mr-5 pa-2"

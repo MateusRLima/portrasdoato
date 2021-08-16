@@ -316,11 +316,11 @@
             um dia melhor.
           </p>
           <p>Mas hoje eu não quero mais falar sobre isso.</p>
-          <figure class="mb-10">
+          <figure class="my-15">
             <img src="../assets/ednalva.jpg" width="100%" />
-            <figcaption  class="text-right mb-10" style="font-size: 0.8rem">
+            <figcaption  class="text-right mb-15" style="font-size: 0.8rem">
               Ednalva Franco em evento Elas por Elas do PT São Paulo, em Julho
-              de 2020. <br />
+              de 2018. <br />
               Foto: Arquivo Pessoal/Ednalva Franco
             </figcaption>
           </figure>

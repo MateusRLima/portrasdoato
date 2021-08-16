@@ -45,6 +45,12 @@ const routes = [
     name: 'StreetFacesView',
     component: () => import('../views/StreetFacesView.vue')
   },
+  
+  {
+    path: '/wnews',
+    name: 'WomanView',
+    component: () => import('../views/WomanView.vue')
+  },
 
   {
     path: '/ednalva',

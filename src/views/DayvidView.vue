@@ -92,7 +92,7 @@
             O que o fez preservar os registros foi se perder dentro da multidão minutos antes de levar  voz de prisão e entregar os cartões de memória a desconhecidos. Um deu ao ‘rapaz do caldo de cana’ e  outro ao do ‘carro de som’. Quando entrou dentro da viatura, o policial pegou sua câmera, não viu os cartões e exigiu dele a entrega.
           </p>
           <h2 class="content-subtitle my-10">
-            Confronto
+            Quatro horas rodando
           </h2>
           <p>
             Sem receber os cartões, os policiais se recusaram a levá-los para uma delegacia. Ficaram rodando pela madrugada por mais de quatro horas nas estradas da área da Petrobras. Mato para todos os lados. “Ele colocou uma 9 milímetros na minha cabeça, olhou para Dayvid e disse: tenho todo tempo do mundo para ficar aqui, meu turno só acaba amanhã. Se querem ir embora, só basta ele liberar e dizer onde estão os cartões”, relembra Wandaick.
