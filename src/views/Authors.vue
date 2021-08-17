@@ -113,7 +113,7 @@ export default {};
   .authors-sheet {
     background-color: #f8f8f8;
     text-align: justify;
-    padding: 1rem 15rem;
+    padding: 1rem 10rem;
   }
 
   .perfil {

@@ -234,7 +234,7 @@ export default {
 
 @media only screen and (min-width: 768px) {
   .news-sheet {
-    padding: 15rem;
+    padding: 10rem;
     background-color: #f8f8f8;
   }
 

@@ -20,7 +20,7 @@
             <div class="pnews-subtitle">
               <h2>
                 No mundo todo, organizações civis criaram manuais para
-                manifestantes, que exploram os direitos e deveres de quem decide
+                manifestantes, <br /> que exploram os direitos e deveres de quem decide
                 ir às ruas e trazem dicas de segurança
               </h2>
             </div>
@@ -728,7 +728,7 @@ export default {
 
 @media only screen and (min-width: 768px) {
   .pnews-sheet {
-    padding: 15rem;
+    padding: 10rem;
     background-color: #f8f8f8;
   }
 

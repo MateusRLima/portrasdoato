@@ -354,7 +354,6 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 .home-header {
   border-bottom: 1px solid #858585;
@@ -525,7 +524,7 @@ export default {
 
   .news-image {
     width: 16.3rem;
-    height: 15rem;
+    height: 10rem;
     object-fit: cover;
     filter: opacity(0.6);
     z-index: 0;

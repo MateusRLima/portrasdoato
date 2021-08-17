@@ -639,60 +639,10 @@
           <h2 class="content-subtitle my-10">
             Morreu na contramão, atrapalhando o tráfego
           </h2>
-          <!-- <v-card flat class="my-10">
-            <v-card-text>
-              <v-container>
-                <v-row>
-                  <v-col class="manchete">
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/1.png"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/2.png"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/3.jpg"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/4.jpg"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/5.jpg"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/6.png"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/7.jpg"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/8.png"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/9.png"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/10.png"
-                    />
-                    <img
-                      class="content-manchete img-fluid"
-                      src="../assets/manchete/11.png"
-                    />
-                  </v-col>
-                </v-row>
-              </v-container>
-            </v-card-text>
-          </v-card> -->
+          <img
+            width="100%"
+            src="../assets/gif-manchetes.gif"
+          />
           <p>
             As manchetes acima foram colhidas de capas de jornais, trechos de
             reportagens e leads (o primeiro e mais importante parágrafos das
@@ -1002,7 +952,7 @@ export default {
 
 @media only screen and (min-width: 768px)
   .news-sheet
-    padding: 200px
+    padding: 10rem
     background-color: #f8f8f8
 
   .news-banner
