@@ -26,13 +26,11 @@
         </div>
       </div>
       <v-container class="pt-0 news-sheet">
-        <v-row>
-          <v-col>
-            <div class="news-title">
-              <h1>Rostos da rua</h1>
-            </div>
-          </v-col>
-        </v-row>
+        <title-component
+          newsTitle="Rostos da rua"
+          :hasSubtitle="false"
+        >
+        </title-component>
         <div class="news-content">
           <p>
             Em outubro de 2013, o fotógrafo Fernando Frazão, da Agência Brasil,
@@ -133,18 +131,6 @@ export default {
   background-color: #f8f8f8;
 }
 
-.news-title {
-  text-align: left;
-  padding: 1rem;
-  color: #2a2a2a;
-  font: 1rem "Libre Baskerville", serif;
-  background: #f8f50d;
-  font-weight: bold;
-  position: relative;
-  top: -30%;
-  z-index: 1;
-}
-
 .news-banner {
   width: 100%;
   height: 25rem;
@@ -201,7 +187,7 @@ export default {
 
 @media only screen and (min-width: 768px) {
   .news-sheet {
-    padding: 10rem;
+    padding: 15rem;
     background-color: #f8f8f8;
   }
 
@@ -212,19 +198,7 @@ export default {
     position: relative;
     z-index: 0;
   }
-
-  .news-title {
-    text-align: center;
-    padding: 1rem;
-    color: #2a2a2a;
-    font: 0.9rem "Libre Baskerville", serif;
-    background: #f8f50d;
-    font-weight: bold;
-    position: relative;
-    top: -30%;
-    z-index: 1;
-  }
-
+  
   .news-subtitle {
     text-align: justify;
     color: #616161;

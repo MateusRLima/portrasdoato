@@ -20,19 +20,17 @@
           "
         >
           Protesto de profissionais da saúde em frente ao Hospital da
-          Restauração, no Recife, em 2020. Francis é o homem em frente a
+          Restauração, no Recife, em 2020.<br /> Francis é o homem em frente a
           viatura, no lado direito da foto. <br />
           Foto: Arquivo Pessoal/Francis Herbert
         </div>
       </div>
       <v-container class="pt-0 news-sheet">
-        <v-row>
-          <v-col>
-            <div class="news-title">
-              <h1>Sem oxigênio</h1>
-            </div>
-          </v-col>
-        </v-row>
+        <title-component
+          newsTitle="Sem oxigênio"
+          :hasSubtitle="false"
+        >
+        </title-component>
         <div class="news-content">
           <p>
             Nos últimos dois anos, assistimos muitas pessoas ficarem sem
@@ -189,52 +187,9 @@ export default {
 };
 </script>
 
-<style >
-.news-sheet {
-  background-color: #f8f8f8;
-}
-
-.news-title {
-  text-align: left;
-  padding: 1rem;
-  color: #2a2a2a;
-  font: 1rem "Libre Baskerville", serif;
-  background: #f8f50d;
-  font-weight: bold;
-  position: relative;
-  top: -50%;
-  z-index: 1;
-}
-
-.news-banner {
-  width: 100%;
-  height: 25rem;
-  object-fit: cover;
-  object-position: 50% 35%;
-  position: relative;
-  z-index: 0;
-}
-
-.news-subtitle {
-  text-align: justify;
-  color: #616161;
-  font: 0.8rem "Open Sans", sans-serif;
-}
-
-.news-content {
-  text-align: justify;
-  color: #616161;
-  font: 1rem "Open Sans", sans-serif;
-}
-
-.content-subtitle {
-  color: #616161;
-  text-align: justify;
-}
-
-@media only screen and (min-width: 768px) {
+<style scoped>
   .news-sheet {
-    padding: 10rem;
+    padding: 15rem;
     background-color: #f8f8f8;
   }
 
@@ -244,19 +199,7 @@ export default {
     object-fit: cover;
     object-position: 50% 65%;
     position: relative;
-    z-index: 0;
-  }
-
-  .news-title {
-    text-align: center;
-    padding: 1rem;
-    color: #2a2a2a;
-    font: 1rem "Libre Baskerville", serif;
-    background: #f8f50d;
-    font-weight: bold;
-    position: relative;
-    top: -50%;
-    z-index: 1;
+    z-index: 0
   }
 
   .news-subtitle {
@@ -275,5 +218,5 @@ export default {
     color: #616161;
     text-align: justify;
   }
-}
+
 </style>

@@ -25,13 +25,11 @@
         </div>
       </div>
       <v-container class="pt-0 news-sheet">
-        <v-row>
-          <v-col>
-            <div class="news-title">
-              <h1>Me prenda, mas as imagens eu não dou</h1>
-            </div>
-          </v-col>
-        </v-row>
+        <title-component
+          newsTitle="Me prenda, mas as imagens eu não dou"
+          :hasSubtitle="false"
+        >
+        </title-component>
         <div class="news-content">
           <p>
            Esta seria a história de Deyvid Bacelar, Diretor Geral da Federação Única dos Petroleiros, técnico de segurança do trabalho e ex-representante dos funcionários da Petrobras na Bahia. Era uma madrugada de novembro, em 2015, quando Deyvid foi preso pela Polícia Militar, sob acusação de desacato ao tentar evitar que um colega fosse preso. Na entrada da refinaria Landulpho Alves (RLAM), em um dos municípios da região metropolitana de Salvador, eles protestavam contra a venda de ativos da Petrobrás, o que, para os manifestantes, representaria uma privatização da companhia.
@@ -141,80 +139,10 @@ export default {
 };
 </script>
 
-<style >
-.news-sheet {
-  background-color: #f8f8f8;
-}
+<style scoped>
 
-.news-title {
-  text-align: left;
-  padding: 1rem;
-  color: #2a2a2a;
-  font: 1rem "Libre Baskerville", serif;
-  background: #f8f50d;
-  font-weight: bold;
-  position: relative;
-  top: -20%;
-  z-index: 1;
-}
-
-.news-banner {
-  width: 100%;
-  height: 25rem;
-  object-fit: cover;
-  /* object-position: 50% 35%; */
-  position: relative;
-  z-index: 0;
-}
-
-.news-subtitle {
-  text-align: justify;
-  color: #616161;
-  font: 0.8rem "Open Sans", sans-serif;
-}
-
-.news-tags {
-  margin-top: 5rem;
-  color: #616161;
-  font: 1rem "Open Sans", sans-serif;
-}
-
-.news-tags h3 {
-  margin-bottom: 5rem;
-}
-
-.news-content {
-  text-align: justify;
-  color: #616161;
-  font: 1rem "Open Sans", sans-serif;
-}
-
-.content-subtitle {
-  color: #616161;
-  text-align: justify;
-}
-
-.content-manchete:nth-child(2n) {
-  animation: fade 5s infinite;
-}
-
-.content-manchete:nth-child(1n) {
-  animation: fade 5s infinite;
-}
-
-@keyframes fade {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@media only screen and (min-width: 768px) {
   .news-sheet {
-    padding: 10rem;
+    padding: 15rem;
     background-color: #f8f8f8;
   }
 
@@ -227,31 +155,10 @@ export default {
     z-index: 0;
   }
 
-  .news-title {
-    text-align: center;
-    color: #2a2a2a;
-    font: 1rem "Libre Baskerville", serif;
-    background: #f8f50d;
-    font-weight: bold;
-    position: relative;
-    top: -50%;
-    z-index: 1;
-  }
-
   .news-subtitle {
     text-align: justify;
     color: #616161;
     font: 0.8rem "Open Sans", sans-serif;
-  }
-
-  .news-tags {
-    margin-top: 5rem;
-    color: #616161;
-    font: 1rem "Open Sans", sans-serif;
-  }
-
-  .news-tags h3 {
-    margin-bottom: 5rem;
   }
 
   .news-content {
@@ -265,14 +172,8 @@ export default {
     text-align: center;
   }
 
-  .content-manchete {
-    position: relative;
-    width: 25%;
-    height: 25%;
-  }
-
   .carousel-text {
     font-size: 1rem;
   }
-}
+
 </style>

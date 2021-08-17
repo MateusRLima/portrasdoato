@@ -8,20 +8,23 @@
     ></header-component>
     <main class="mt-16">
       <div style="position: relative;">
-          <img class="pnews-banner" src="../assets/materia4.jpg" />
-          <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Constituição Federal. Foto: Reprodução/Ricardo</div>
+        <img class="pnews-banner" src="../assets/materia4.jpg" />
+        <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Constituição Federal. Foto: Reprodução/Ricardo</div>
       </div>
       <v-container class="pt-0 pnews-sheet">
+        <title-component
+          newsTitle="Protesto: o que é permitido por lei?"
+          newsSubtitle="No mundo todo, organizações civis criaram manuais para manifestantes, que exploram os direitos e deveres de quem decide ir às ruas e trazem dicas de segurança"
+        >
+        </title-component>
         <v-row>
           <v-col>
             <div class="pnews-title">
-              <h1>Protesto: o que é permitido por lei?</h1>
+              <h1></h1>
             </div>
             <div class="pnews-subtitle">
               <h2>
-                No mundo todo, organizações civis criaram manuais para
-                manifestantes, <br /> que exploram os direitos e deveres de quem decide
-                ir às ruas e trazem dicas de segurança
+                
               </h2>
             </div>
           </v-col>
@@ -81,7 +84,6 @@
           </p>
         </div>
         <v-carousel
-          cycle
           height="250"
           class="my-10"
           :show-arrows="false"
@@ -298,7 +300,6 @@
             filmado pelo manifestante.
           </p>
           <v-carousel
-            cycle
             height="250"
             class="mt-10 mb-2"
             :show-arrows="false"
@@ -654,18 +655,6 @@ export default {
   background-color: #f8f8f8;
 }
 
-.pnews-title {
-  text-align: center;
-  padding: 1rem;
-  color: #2a2a2a;
-  font: 1rem "Libre Baskerville", serif;
-  background: #f8f50d;
-  font-weight: bold;
-  position: relative;
-  top: -20%;
-  z-index: 1;
-}
-
 .pnews-banner {
   width: 100%;
   height: 25rem;
@@ -728,7 +717,7 @@ export default {
 
 @media only screen and (min-width: 768px) {
   .pnews-sheet {
-    padding: 10rem;
+    padding: 15rem;
     background-color: #f8f8f8;
   }
 
@@ -738,17 +727,6 @@ export default {
     object-fit: cover;
     position: relative;
     z-index: 0;
-  }
-
-  .pnews-title {
-    padding: 1rem;
-    color: #2a2a2a;
-    font: 1rem "Libre Baskerville", serif;
-    background: #f8f50d;
-    font-weight: bold;
-    position: relative;
-    top: -20%;
-    z-index: 1;
   }
 
   .pnews-subtitle {

@@ -25,22 +25,18 @@
         </div>
       </div>
       <v-container class="pt-0 wnews-sheet">
-        <v-row>
-          <v-col>
-            <div class="wnews-title">
-              <h1>Mulheres no centro: a década de protestos no campo</h1>
-            </div>
-            <div class="wnews-subtitle">
-              <h2 class="cite ma-0">
-                <span class="big-quote">“</span>É melhor morrer na luta que
-                morrer de fome
-                <br />
-                <br />
-                Margarida Maria Alves
-              </h2>
-            </div>
-          </v-col>
-        </v-row>
+        <title-component
+          newsTitle="Mulheres no centro: a década de protestos no campo"
+          :hasSubtitle="false"
+        >
+        </title-component>
+        <p class="cite ma-0">
+          <span class="big-quote">“</span>É melhor morrer na luta que
+          morrer de fome
+          <br />
+          <br />
+          Margarida Maria Alves
+        </p>
         <div class="wnews-content mt-10">
           <p>
             O Brasil tem cerca de 851 milhões de áreas rurais, onde vive uma
@@ -178,91 +174,15 @@ export default {
 };
 </script>
 
-<style >
-.wnews-sheet {
-  background-color: #f8f8f8;
-}
+<style scoped>
 
-.wnews-title {
-  text-align: center;
-  padding: 1rem;
-  color: #2a2a2a;
-  font: 1rem "Libre Baskerville", serif;
-  background: #f8f50d;
-  font-weight: bold;
-  position: relative;
-  top: -20%;
-  z-index: 1;
-}
-
-.wnews-banner {
-  width: 100%;
-  height: 25rem;
-  object-fit: cover;
-  position: relative;
-  z-index: 0;
-}
-
-.wnews-subtitle {
-  text-align: center;
-  color: #616161;
-  font: 0.8rem "Open Sans", sans-serif;
-}
-
-.wnews-tags {
-  margin-top: 5rem;
-  color: #616161;
-  font: 0.5rem "Open Sans", sans-serif;
-}
-
-.wnews-tags h3 {
-  margin-bottom: 5rem;
-}
-
-.wnews-content {
-  text-align: justify;
-  color: #616161;
-  font: 1rem "Open Sans", sans-serif;
-  line-height: 1.6rem;
-}
-
-.content-subtitle {
-  color: #616161;
-  text-align: justify;
-}
-
-.font-special {
-  color: #8e8e8e;
-  font: 1.1rem "Libre Baskerville", serif;
-  line-height: 1.6rem;
-}
-
-.content-manchete:nth-child(2n) {
-  animation: fade 5s infinite;
-}
-
-.content-manchete:nth-child(1n) {
-  animation: fade 5s infinite;
-}
-
-@keyframes fade {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@media only screen and (min-width: 768px) {
   .wnews-sheet {
-    padding: 10rem;
+    padding: 15rem;
     background-color: #f8f8f8;
   }
 
   .cite {
-    font: 1.5rem "Libre Baskerville", serif;
+    font: 1.2rem "Libre Baskerville", serif;
     color: #b5b5b5;
   }
 
@@ -280,43 +200,10 @@ export default {
     z-index: 0;
   }
 
-  .wnews-title {
-    color: #2a2a2a;
-    font: 0.9rem "Libre Baskerville", serif;
-    background: #f8f50d;
-    font-weight: bold;
-    position: relative;
-    width: 100%;
-    top: -20%;
-    z-index: 1;
-  }
-
-  .wnews-subtitle {
-    text-align: center;
-    color: #616161;
-    font: 0.8rem "Open Sans", sans-serif;
-  }
-
-  .wnews-tags {
-    margin-top: 5rem;
-    color: #616161;
-    font: 1rem "Open Sans", sans-serif;
-  }
-
-  .wnews-tags h3 {
-    margin-bottom: 5rem;
-  }
-
   .wnews-content {
     text-align: justify;
     color: #616161;
     font: 1rem "Open Sans", sans-serif;
-    line-height: 1.6rem;
-  }
-
-  .font-special {
-    color: #8e8e8e;
-    font: 1.3rem "Libre Baskerville", serif;
     line-height: 1.6rem;
   }
 
@@ -325,14 +212,4 @@ export default {
     text-align: center;
   }
 
-  .content-manchete {
-    position: relative;
-    width: 25%;
-    height: 25%;
-  }
-
-  .carousel-text {
-    font-size: 1rem;
-  }
-}
 </style>

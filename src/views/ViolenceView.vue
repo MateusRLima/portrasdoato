@@ -9,23 +9,30 @@
     <main class="mt-16">
       <div style="position: relative">
         <img class="news-banner" src="../assets/materia1.jpg" />
-        <div class="text-left" style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Sindicalistas ocupam Brasília, em ato pelos direitos dos/as trabalhadores/as e enfrentam repressão e violência policial, 2015. <br /> Foto: Reprodução/Zeca Ribeiro</div>
+        <div
+          class="text-left"
+          style="
+            position: absolute;
+            top: 10px;
+            color: grey;
+            font-size: 0.8rem;
+            left: 10px;
+          "
+        >
+          <p>
+            Sindicalistas ocupam Brasília, em ato pelos direitos dos/as
+            trabalhadores/as e enfrentam repressão e violência policial, 2015.
+            <br />
+            Foto: Reprodução/Zeca Ribeiro
+          </p>
+        </div>
       </div>
       <v-container class="pt-0 news-sheet">
-        <v-row>
-          <v-col>
-            <div class="news-title">
-              <h1>Trabalhadores no ponto, criminosos nas ruas</h1>
-            </div>
-            <div class="news-subtitle mb-10">
-              <h2>
-                Um olhar sobre registros da última década que mostram como o
-                poder judiciário, a polícia e a mídia têm sido utilizados para
-                ‘criminalizar’ quem protesta
-              </h2>
-            </div>
-          </v-col>
-        </v-row>
+        <title-component
+          newsTitle="Trabalhadores no ponto, criminosos nas ruas"
+          newsSubtitle="Um olhar sobre registros da última década que mostram como o poder judiciário, a polícia e a mídia têm sido utilizados para ‘criminalizar’ quem protesta"
+        >
+        </title-component>
         <div class="news-content">
           <p>
             <q>Ninguém gosta de fazer protesto, fazemos porque precisamos</q>,
@@ -45,7 +52,6 @@
             >
           </p>
           <v-carousel
-            cycle
             height="100%"
             class="my-10"
             :show-arrows="false"
@@ -100,7 +106,8 @@
                 <v-card-title>
                   <v-col align="left" class="pa-0">
                     <p>
-                      CRIMINALIZAR: considerar crime, definir ato como crime, tornar criminal.
+                      CRIMINALIZAR: considerar crime, definir ato como crime,
+                      tornar criminal.
                     </p>
                     <v-divider style="background-color: #f8f50d"></v-divider>
                   </v-col>
@@ -306,7 +313,6 @@
             categoria passou a se posicionar contra a privatização.
           </p>
           <v-carousel
-            cycle
             height="100%"
             class="my-10"
             :show-arrows="false"
@@ -639,10 +645,9 @@
           <h2 class="content-subtitle my-10">
             Morreu na contramão, atrapalhando o tráfego
           </h2>
-          <img
-            width="100%"
-            src="../assets/gif-manchetes.gif"
-          />
+          <div class="text-center my-10">
+            <img  width="50%" src="../assets/gif-manchetes.gif" />
+          </div>
           <p>
             As manchetes acima foram colhidas de capas de jornais, trechos de
             reportagens e leads (o primeiro e mais importante parágrafos das
@@ -852,22 +857,9 @@
   });
 })();
 
+
 export default {
   name: "ViolenceView",
-
-  data: () => ({
-    title: "",
-    subtitle: "",
-    image: null,
-    author: "",
-    isMainNews: false,
-    format: ["Dados", "Perfil", "Reportagem", "Expresso"],
-    theme: "",
-    tags: {},
-    selectedFormat: "",
-    newsDescription: "",
-    fonts: "",
-  }),
 
   methods: {
     goToSnews() {
@@ -878,136 +870,56 @@ export default {
 };
 </script>
 
-<style lang="sass">
-.big-quote
-  font-size: 3rem
-  color: #F8F50D
+<style scoped>
+  .news-sheet {
+    padding: 15rem;
+    background-color: #f8f8f8;
+  }
+  .news-banner {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+  }
 
-.font-special
-  color: #8e8e8e
-  font: 1.3rem "Libre Baskerville", serif
-  line-height: 1.6rem
+  .news-subtitle {
+    text-align: center;
+    color: #616161;
+    font: 0.8rem "Open Sans", sans-serif;
+  }
+  .news-tags {
+    margin-top: 5rem;
+    color: #616161;
+    font: 1rem "Open Sans", sans-serif;
+  }
+  .news-tags h3 {
+    margin-bottom: 5rem;
+  }
+  .news-content {
+    text-align: justify;
+    color: #616161;
+    font: 1rem "Open Sans", sans-serif;
+    line-height: 1.6rem;
+  }
+  .content-subtitle {
+    color: #616161;
+    text-align: center;
+  }
 
-.news-sheet
-  padding: 200px
-  background-color: #f8f8f8
+  .big-quote {
+    font-size: 3rem;
+    color: #f8f50d;
+  }
 
-.news-title
-  text-align: center
-  padding: 1rem
-  color: #2a2a2a
-  font: 0.9rem "Libre Baskerville", serif
-  background: #f8f50d
-  font-weight: bold
-  position: relative
-  top: -20%
-  z-index: 1
+  .font-special {
+    color: #8e8e8e;
+    font: 1.3rem "Libre Baskerville", serif;
+    line-height: 1.6rem;
+  }
 
-.news-banner
-  width: 100%
-  height: 25rem
-  object-fit: cover
-  position: relative
-  z-index: 0
-
-.news-subtitle
-  text-align: center
-  color: #616161
-  font: 0.8rem "Open Sans", sans-serif
-
-.news-tags
-  margin-top: 5rem
-  color: #616161
-  font: 1rem "Open Sans", sans-serif
-
-  h3
-    margin-bottom: 5rem
-
-.news-content
-  text-align: justify
-  color: #616161
-  font: 1rem "Open Sans", sans-serif
-
-.content-subtitle
-  color: #616161
-  text-align: justify
-
-.manchete
-  display: flex
-  flex-direction: column
-  justify-content: center
-
-.content-manchete
-  margin: 2rem 0
-  max-width: 100%
-  height: auto
-
-@keyframes fade
-  0%,
-  100%
-    opacity: 0
-
-  50%
-    opacity: 1
-
-@media only screen and (min-width: 768px)
-  .news-sheet
-    padding: 10rem
-    background-color: #f8f8f8
-
-  .news-banner
-    width: 100%
-    height: 25rem
-    object-fit: cover
-    position: relative
-    z-index: 0
-
-  .news-title
-    padding: 1rem
-    color: #2a2a2a
-    font: 0.9rem "Libre Baskerville", serif
-    background: #f8f50d
-    font-weight: bold
-    position: relative
-    top: -20%
-    z-index: 1
-
-  .news-subtitle
-    text-align: center
-    color: #616161
-    font: 0.8rem "Open Sans", sans-serif
-
-  .news-tags
-    margin-top: 5rem
-    color: #616161
-    font: 1rem "Open Sans", sans-serif
-
-    h3
-      margin-bottom: 5rem
-
-  .news-content
-    text-align: justify
-    color: #616161
-    font: 1rem "Open Sans", sans-serif
-    line-height: 1.6rem
-
-  .content-subtitle
-    color: #616161
-    text-align: center
-
-  .carousel-text
-    font-size: 1rem
-
-  .content-manchete
-    max-width: 100%
-    height: auto
-
-  @keyframes fade
-    0%,
-    100%
-      opacity: 0
-
-    50%
-      opacity: 1
+  .carousel-text {
+    font-size: 1rem;
+  }
 </style>
  

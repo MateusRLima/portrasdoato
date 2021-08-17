@@ -24,13 +24,11 @@
         </div>
       </div>
       <v-container class="pt-0 news-sheet">
-        <v-row>
-          <v-col>
-            <div class="news-title">
-              <h1>Um cobrador agredido ao parar o trânsito</h1>
-            </div>
-          </v-col>
-        </v-row>
+        <title-component
+          newsTitle="Um cobrador agredido ao parar o trânsito"
+          :hasSubtitle="false"
+        >
+        </title-component>
         <div class="news-content">
           <p>
             Jeremias Nascimento, 45 anos, é cobrador da empresa Caxangá, em
@@ -40,7 +38,7 @@
             trabalhista com vigor, muita revolta e ao mesmo tempo uma paixão e
             orgulho de si por não desistir.
           </p>
-          <p class="mb-10">
+          <p>
             A luta dos rodoviários recifenses mais parece um disco arranhado que
             uma linha do tempo. Ano após ano, eles reivindicam
             melhores salários, condições de trabalho mais humanas, preservação dos direitos trabalhistas e de seus empregos.
@@ -60,7 +58,7 @@
           <img
             class="float-left mr-5 mb-10"
             src="../assets/whats.jpg"
-            width="40%"
+            width="30%"
           />
           <p>
             Jeremias foi um deles. Quando expliquei quem eu era e o motivo do
@@ -80,12 +78,12 @@
             de 30 trabalhadores do transporte público haviam sucumbido à
             covid-19.
           </p>
-          <figure class="mb-10">
-            <img src="../assets/jornal.jpg" width="100%" />
+          <figure class="float-right my-10 ml-10 text-right">
+            <img src="../assets/jornal.jpg"/>
             <figcaption class="text-right" style="font-size: 0.8rem">
-              Jornal do Commercio, dia 31/05/2020. Trabalhadores do setor
-              rodoviário perdem a vida devido a pandemia da COVID-19. O trabalho
-              é considerado essencial. Foto: Print de Matéria do Jornal do
+              Jornal do Commercio, dia 31/05/2020.<br/> Trabalhadores do setor
+              rodoviário perdem a vida devido a pandemia da COVID-19.<br/> O trabalho
+              é considerado essencial. <br/> Foto: Print de Matéria do Jornal do
               Commercio, veiculada no dia 31.05.2020
             </figcaption>
           </figure>
@@ -193,18 +191,6 @@ export default {
   background-color: #f8f8f8;
 }
 
-.news-title {
-  text-align: left;
-  padding: 1rem;
-  color: #2a2a2a;
-  font: 1rem "Libre Baskerville", serif;
-  background: #f8f50d;
-  font-weight: bold;
-  position: relative;
-  top: -20%;
-  z-index: 1;
-}
-
 .news-banner {
   width: 100%;
   height: 25rem;
@@ -261,7 +247,7 @@ export default {
 
 @media only screen and (min-width: 768px) {
   .news-sheet {
-    padding: 10rem;
+    padding: 15rem;
     background-color: #f8f8f8;
   }
 
@@ -272,17 +258,6 @@ export default {
     object-position: top;
     position: relative;
     z-index: 0;
-  }
-
-  .news-title {
-    text-align: center;
-    color: #2a2a2a;
-    font: 1rem "Libre Baskerville", serif;
-    background: #f8f50d;
-    font-weight: bold;
-    position: relative;
-    top: -50%;
-    z-index: 1;
   }
 
   .news-subtitle {

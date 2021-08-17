@@ -2,15 +2,15 @@
   <v-card tile color="#FCFCFC" class="card-item mr-5">
     <v-card-text class="pa-3">
       <v-row align="flex-start">
-          <v-col cols="6" class="pb-0 px-6 pt-6" align="left">
+        <v-col cols="6" class="pb-0 px-6 pt-6" align="left">
           <v-chip outlined color="#2A2A2A" class="mb-5" label>
-              {{ readTime }}min de leitura
+            {{ readTime }}min de leitura
           </v-chip>
           <p class="card-title">
-              {{ title }}
+            {{ title }}
           </p>
           <h4 class="card-subtitle">
-              {{ subtitle.slice(0, 30) }} ...
+            {{ subtitle.slice(0, 30) }} ...
           </h4>
           <router-link>
             Ver mais <v-icon color="#2A2A2A"
@@ -27,27 +27,27 @@
             >mdi-chevron-right</v-icon
             ></v-btn
           >
-          </v-col>
-          <v-col class="pa-0">
-            <div class="d-flex justify-center chip-group">
-              <v-chip
-                color="#2A2A2A"
-                dark
-                class="chip mx-4"
-                small
-                label
-              >
-                <p class="ma-0">{{ format }}</p>
-              </v-chip>
-              <v-chip color="#2A2A2A" dark class="chip" small label>
-                <p class="ma-0">{{ theme }}</p>
-              </v-chip>
-            </div>
-            <img
-              class="card-image"
-              :src="formImgPath(imgName)"
-            />
-          </v-col>
+        </v-col>
+        <v-col class="pa-0">
+          <div class="d-flex justify-center chip-group">
+            <v-chip
+              color="#2A2A2A"
+              dark
+              class="chip mx-4"
+              small
+              label
+            >
+              <p class="ma-0">{{ format }}</p>
+            </v-chip>
+            <v-chip color="#2A2A2A" dark class="chip" small label>
+              <p class="ma-0">{{ theme }}</p>
+            </v-chip>
+          </div>
+          <img
+            class="card-image"
+            :src="formImgPath(imgName)"
+          />
+        </v-col>
       </v-row>
     </v-card-text>
   </v-card>

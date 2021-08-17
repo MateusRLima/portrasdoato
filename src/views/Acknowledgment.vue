@@ -111,7 +111,7 @@ export default {
   .about-sheet {
     background-color: #f8f8f8;
     text-align: justify;
-    padding: 1rem 10rem;
+    padding: 1rem 15rem;
   }
 }
 </style>
