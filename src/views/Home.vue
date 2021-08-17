@@ -63,255 +63,49 @@
               <v-icon color="#F8F50D"> mdi-chevron-left </v-icon>
             </template>
             <v-slide-item light>
-              <v-card tile color="#FCFCFC" class="slide-item mr-5 pa-2">
-                <v-card-text class="pa-0">
-                  <v-container class="pa-0">
-                    <v-row align="flex-start">
-                      <v-col cols="6" class="pb-0 px-6 pt-6" align="left">
-                        <v-chip outlined color="#2A2A2A" class="mb-5" label>
-                          10min de leitura
-                        </v-chip>
-                        <h3 class="news-list-title">
-                          Trabalhadores no ponto,<br />
-                          criminosos nas ruas
-                        </h3>
-                        <h4 class="news-list-subtitle">
-                          Um olhar sobre registros da última década que...
-                        </h4>
-                        <v-btn
-                          class="pl-0"
-                          small
-                          @click="goToVnews()"
-                          text
-                          color="#2A2A2A"
-                          >Ver mais
-                          <v-icon color="#2A2A2A"
-                            >mdi-chevron-right</v-icon
-                          ></v-btn
-                        >
-                      </v-col>
-                      <v-col cols="6" class="pa-0">
-                        <div class="d-flex justify-center chip-group">
-                          <v-chip
-                            color="#2A2A2A"
-                            dark
-                            class="chip mx-4"
-                            small
-                            label
-                          >
-                            <p class="ma-0 white--text">Reportagem</p>
-                          </v-chip>
-                          <v-chip color="#2A2A2A" dark class="chip" small label>
-                            <p class="ma-0">Criminalização</p>
-                          </v-chip>
-                        </div>
-                        <img
-                          class="news-image"
-                          src="../assets/cards/materia1.jpg"
-                        />
-                      </v-col>
-                    </v-row>
-                  </v-container>
-                </v-card-text>
-              </v-card>
+              <card-news
+                title="Trabalhadores no ponto, criminosos nas ruas"
+                subtitle="Um olhar sobre registros da última década que"
+                readTime="10"
+                format="Reportagem"
+                theme="Criminalização"
+                imgName="materia1.jpg"
+                @sendTo="goToVnews"
+              ></card-news>
             </v-slide-item>
             <v-slide-item light>
-              <v-card tile color="#FCFCFC" class="slide-item mr-5 pa-2">
-                <v-card-text class="pa-0">
-                  <v-container class="pa-0">
-                    <v-row align="flex-start">
-                      <v-col cols="6" class="pb-0 px-6 pt-6" align="left">
-                        <v-chip outlined color="#2A2A2A" class="mb-5" label>
-                          15min de leitura
-                        </v-chip>
-                        <h3 class="news-list-title mb-5">Rostos da rua</h3>
-                        <h4 class="news-list-subtitle mb-5">
-                          Em outubro de 2013, o fotógrafo Fernando Frazão, da
-                          Agência...
-                        </h4>
-                        <v-btn
-                          class="pl-0"
-                          small
-                          @click="goToSnews()"
-                          text
-                          color="#2A2A2A"
-                          >Ver mais
-                          <v-icon color="#2A2A2A"
-                            >mdi-chevron-right</v-icon
-                          ></v-btn
-                        >
-                      </v-col>
-                      <v-col cols="6" class="pa-0">
-                        <div class="d-flex justify-center chip-group">
-                          <v-chip
-                            color="#2A2A2A"
-                            dark
-                            class="chip mx-4"
-                            small
-                            label
-                          >
-                            <p class="ma-0">Perfis</p>
-                          </v-chip>
-                          <v-chip color="#2A2A2A" dark class="chip" small label>
-                            <p class="ma-0">Manifestantes</p>
-                          </v-chip>
-                        </div>
-                        <img
-                          class="news-image"
-                          src="../assets/cards/materia2.jpg"
-                        />
-                      </v-col>
-                    </v-row>
-                  </v-container>
-                </v-card-text>
-              </v-card>
+              <card-news
+                title="Rostos da rua"
+                subtitle=" Em outubro de 2013, o fotógrafo Fernando Frazão"
+                readTime="15"
+                format="Perfis"
+                theme="Manifestantes"
+                imgName="materia2.jpg"
+                @sendTo="goToSnews"
+              ></card-news>
             </v-slide-item>
             <v-slide-item light>
-              <v-card tile color="#FCFCFC" class="slide-item mr-5 pa-2">
-                <v-card-text class="pa-0">
-                  <v-container class="pa-0">
-                    <v-row align="flex-start">
-                      <v-col cols="6" class="pb-0 px-6 pt-6" align="left">
-                        <v-chip outlined color="#2A2A2A" class="mb-3" label>
-                          7min de leitura
-                        </v-chip>
-                        <h3 class="news-list-title">
-                          Mulheres no centro: a década de protestos no campo
-                        </h3>
-                        <h4 class="news-list-subtitle">
-                          “É melhor morrer na luta que morrer de fome”
-                        </h4>
-                        <v-btn
-                          class="pl-0"
-                          small
-                          @click="goToWnews()"
-                          text
-                          color="#2A2A2A"
-                          >Ver mais
-                          <v-icon color="#2A2A2A"
-                            >mdi-chevron-right</v-icon
-                          ></v-btn
-                        >
-                      </v-col>
-                      <v-col cols="6" class="pa-0">
-                        <div class="d-flex justify-center chip-group">
-                          <v-chip
-                            color="#2A2A2A"
-                            dark
-                            class="chip mx-4"
-                            small
-                            label
-                          >
-                            <p class="ma-0">Dados</p>
-                          </v-chip>
-                          <v-chip color="#2A2A2A" dark class="chip" small label>
-                            <p class="ma-0">Reivindicações</p>
-                          </v-chip>
-                        </div>
-                        <img
-                          class="news-image"
-                          style="object-position: 80% 50%"
-                          src="../assets/cards/materia3.png"
-                        />
-                      </v-col>
-                    </v-row>
-                  </v-container>
-                </v-card-text>
-              </v-card>
+              <card-news
+                title="Mulheres no centro: a década de protestos no campo"
+                subtitle="“É melhor morrer na luta que morrer de fome”"
+                readTime="7"
+                format="Dados"
+                theme="Manifestantes"
+                imgName="materia3.png"
+                @sendTo="goToWnews"
+              ></card-news>
             </v-slide-item>
             <v-slide-item light>
-              <v-card tile color="#FCFCFC" class="slide-item mr-5 pa-2">
-                <v-card-text class="pa-0">
-                  <v-container class="pa-0">
-                    <v-row align="flex-start">
-                      <v-col cols="6" class="pb-0 px-6 pt-6" align="left">
-                        <v-chip outlined color="#2A2A2A" class="mb-5" label>
-                          8min de leitura
-                        </v-chip>
-                        <h3 class="news-list-title">
-                          Protesto: o que é permitido por lei?
-                        </h3>
-                        <h4 class="news-list-subtitle">
-                          Entenda seus direitos como manifestante e saiba...
-                        </h4>
-                        <v-btn
-                          class="pl-0"
-                          small
-                          @click="goToPnews()"
-                          text
-                          color="#2A2A2A"
-                          >Ver mais
-                          <v-icon color="#2A2A2A"
-                            >mdi-chevron-right</v-icon
-                          ></v-btn
-                        >
-                      </v-col>
-                      <v-col cols="6" class="pa-0">
-                        <div class="d-flex justify-center chip-group">
-                          <v-chip
-                            color="#2A2A2A"
-                            dark
-                            class="chip mx-4"
-                            small
-                            label
-                          >
-                            <p class="ma-0">Reportagem</p>
-                          </v-chip>
-                          <v-chip color="#2A2A2A" dark class="chip" small label>
-                            <p class="ma-0">Leis</p>
-                          </v-chip>
-                        </div>
-                        <img
-                          class="news-image"
-                          style="object-position: 80% 50%"
-                          src="../assets/cards/materia4.jpg"
-                        />
-                      </v-col>
-                    </v-row>
-                  </v-container>
-                </v-card-text>
-              </v-card>
+               <card-news
+                title="Protesto: o que é permitido por lei?"
+                subtitle="Entenda seus direitos como manifestante e saiba"
+                readTime="8"
+                format="Reportagem"
+                theme="Leis"
+                imgName="materia4.jpg"
+                @sendTo="goToPnews"
+              ></card-news>
             </v-slide-item>
-            <!-- <v-slide-item
-              light
-            >
-              <v-card
-                @click="goToPnews()"
-                tile
-                color="#FCFCFC"
-                class="slide-item mr-5 pa-2"
-              >
-              <v-card-text class="pa-0">
-                <v-container class="pa-0">
-                  <v-row align="flex-start">
-                    <v-col cols="6" class="pb-0 px-6 pt-6" align="left">
-                      <v-chip outlined color="#2A2A2A" class="mb-5" label>
-                        5min de leitura
-                      </v-chip>
-                      <h3 class="news-list-title">
-                        Protesto: o que é permitido por lei?
-                      </h3>
-                      <h4 class="news-list-subtitle">
-                        Entenda seus direitos como manifestante e saiba...
-                      </h4>
-                      <v-btn class="pl-0" small @click="goToPnews()" text color="#2A2A2A">Ver mais <v-icon color="#2A2A2A">mdi-chevron-right</v-icon></v-btn>
-                    </v-col>
-                    <v-col cols="6" class="pa-0">
-                      <div class="d-flex justify-center chip-group">
-                        <v-chip color="#2A2A2A" dark class="chip mx-4" small label>
-                          <p class="ma-0">Expresso</p>
-                        </v-chip>
-                        <v-chip color="#2A2A2A" dark class="chip" small label>
-                          <p class="ma-0">Como ajudar</p>
-                        </v-chip>
-                      </div>
-                      <img class="news-image" style="object-position: 80% 50%" src="../assets/cards/materia4.jpg">
-                    </v-col>
-                  </v-row>
-                </v-container>
-              </v-card-text>
-              </v-card>
-            </v-slide-item> -->
           </v-slide-group>
         </v-container>
       </v-card>
@@ -320,10 +114,15 @@
 </template>
 
 <script>
-// import { apiListNews } from "../services"
+
+import CardSlideItem from '../components/HomeView/CardSlideItem.vue'
 
 export default {
   name: "Home",
+
+  components: {
+    "card-news" : CardSlideItem
+  },
 
   data: () => ({
     items: [],
@@ -371,9 +170,9 @@ export default {
 }
 
 #router-link {
-  margin-right: 1rem;
+  margin-right: 5rem;
   text-decoration: none;
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 
 .home {
@@ -399,139 +198,17 @@ export default {
   font: 1rem "Open Sans", sans-serif;
 }
 
+.cite{
+  color: #b5b5b5;
+}
+
+.big-quote {
+  font-size: 2rem;
+  color: #f8f50d;
+}
+
 .slide {
   width: 75%;
 }
 
-.slide-item {
-  height: 14rem;
-  width: 33rem;
-}
-
-.news-list-title {
-  color: #2a2a2a;
-  font: 1.5rem "Libre Baskerville", serif;
-  text-align: left;
-}
-
-.news-list-subtitle {
-  margin: 1rem 0;
-  color: #2a2a2a;
-  font: 0.8rem "Open Sans", sans-serif;
-  text-align: left;
-}
-
-.chip-group {
-  position: absolute;
-  margin-top: 1rem;
-  width: 50%;
-  z-index: 1;
-}
-
-.news-image {
-  width: 14.5rem;
-  height: 13rem;
-  object-fit: cover;
-  filter: opacity(0.6);
-  z-index: 0;
-}
-
-.news-time {
-  border-radius: 3px;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-header {
-    border-bottom: 1px solid #858585;
-    z-index: 1;
-    width: 100%;
-  }
-
-  .cite {
-    font: 1rem "Libre Baskerville", serif;
-    color: #b5b5b5;
-    text-align: justify;
-  }
-
-  #toolbar {
-    box-shadow: none;
-    padding: 0px;
-  }
-
-  #router-link {
-    margin-right: 5rem;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-
-  .home {
-    height: 100%;
-    background: url("../assets/materia1.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  .big-quote {
-    font-size: 2rem;
-    color: #f8f50d;
-  }
-
-  .news-slider {
-    width: 120rem;
-  }
-
-  .slide-item {
-    height: 14rem;
-    width: 33rem;
-  }
-
-  .principal-title {
-    width: 100%;
-    margin-top: 5rem;
-    font: 2.2rem "Libre Baskerville", serif;
-    background: #f8f50d;
-    font-weight: bolder;
-  }
-
-  .principal-subtitle {
-    text-align: left;
-    color: #b5b5b5;
-    font: 1rem "Open Sans", sans-serif;
-  }
-
-  .news-list-title {
-    color: #2a2a2a;
-    font: 1rem "Libre Baskerville", serif;
-    text-align: left;
-    font-weight: 600;
-  }
-
-  .news-list-subtitle {
-    margin: 1rem 0;
-    color: #2a2a2a;
-    font: 0.8rem "Open Sans", sans-serif;
-    text-align: left;
-  }
-
-  .chip-group {
-    position: absolute;
-    margin-top: 1rem;
-    width: 50%;
-    z-index: 1;
-  }
-
-  .news-image {
-    width: 16.3rem;
-    height: 10rem;
-    object-fit: cover;
-    filter: opacity(0.6);
-    z-index: 0;
-  }
-
-  .news-time {
-    border-radius: 3px;
-  }
-}
 </style>

@@ -9,7 +9,7 @@
     <main class="mt-16">
       <div style="position: relative">
         <img class="news-banner" src="../assets/materia1.jpg" />
-        <div style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Sindicalistas ocupam Brasília, em ato pelos direitos dos/as trabalhadores/as e enfrentam repressão e violência policial, 2015. Foto: Reprodução/Zeca Ribeiro</div>
+        <div class="text-left" style="position: absolute; top: 10px; color: grey; font-size: 0.8rem; left: 10px">Sindicalistas ocupam Brasília, em ato pelos direitos dos/as trabalhadores/as e enfrentam repressão e violência policial, 2015. <br /> Foto: Reprodução/Zeca Ribeiro</div>
       </div>
       <v-container class="pt-0 news-sheet">
         <v-row>

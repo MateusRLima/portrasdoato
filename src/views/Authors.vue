@@ -14,7 +14,7 @@
             <div class="text-center">
               <img
                 class="rounded-circle perfil mb-10"
-                src="../assets/Flávia.jpeg"
+                src="../assets/authors/Flávia.jpeg"
                 width="150px"
                 height="150px"
               />
@@ -26,7 +26,7 @@
             <div class="text-center">
               <img
                 class="rounded-circle perfil mb-10"
-                src="../assets/Débora.jpeg"
+                src="../assets/authors/Débora.jpeg"
                 width="150px"
                 height="150px"
               />
