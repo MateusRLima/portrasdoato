@@ -158,12 +158,39 @@
             ONG, são mais um recurso passível de ser usado de forma arbitrária
             contra manifestantes pacíficos
           </p>
+           <iframe
+            src="https://flo.uri.sh/story/960474/embed"
+            title="Interactive or visual content"
+            class="flourish-embed-iframe"
+            frameborder="0"
+            scrolling="no"
+            style="width: 100%; height: 600px"
+            sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          ></iframe>
           <div
-            is="script"
-            class="flourish-embed flourish-hierarchy"
-            src="https://public.flourish.studio/resources/embed.js"
-            data-src="story/960474"
-          ></div>
+            style="
+              width: 100%!;
+              margin-top: 4px !important;
+              text-align: right !important;
+            "
+          >
+            <a
+              class="flourish-credit"
+              href="https://public.flourish.studio/story/960474/?utm_source=embed&utm_campaign=story/960474"
+              target="_top"
+              style="text-decoration: none !important"
+              ><img
+                alt="Made with Flourish"
+                src="https://public.flourish.studio/resources/made_with_flourish.svg"
+                style="
+                  width: 105px !important;
+                  height: 16px !important;
+                  border: none !important;
+                  margin: 0 !important;
+                "
+              />
+            </a>
+          </div>
           <p class="mt-10">
             O Partido do Movimento Democrático Brasileiro (PMDB) foi o que mais
             propôs dispositivos considerados pela ONG como negativos para o

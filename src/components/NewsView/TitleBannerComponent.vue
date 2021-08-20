@@ -70,19 +70,21 @@ export default {
 
 	.news-title {
 		text-align: center;
-		padding: 0.6rem;
+		padding: 0.2rem;
 		color: #2a2a2a;
-		font: 0.8rem "Libre Baskerville", serif;
+		font: 0.7rem "Libre Baskerville", serif;
 		background: #f8f50d;
 		font-weight: bold;
 		position: relative;
 		z-index: 1;
 		bottom: 30px;
+		white-space: nowrap
 	}
 
 	.news-subtitle {
 		text-align: center;
 		color: #616161;
-		font: 0.8rem "Open Sans", sans-serif;
+		font: 0.7rem "Open Sans", sans-serif;
 	}
+	
 </style>

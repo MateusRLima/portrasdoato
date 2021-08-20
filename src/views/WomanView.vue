@@ -31,8 +31,8 @@
         >
         </title-component>
         <p class="cite ma-0">
-          <span class="big-quote">“</span>É melhor morrer na luta que
-          morrer de fome
+          <span class="big-quote">“</span>É melhor morrer na luta que morrer de
+          fome
           <br />
           <br />
           Margarida Maria Alves
@@ -71,12 +71,39 @@
           <h2 class="content-subtitle my-10">
             Veja a evolução das pautas do campo, na última década
           </h2>
+          <iframe
+            src="https://flo.uri.sh/story/956920/embed"
+            title="Interactive or visual content"
+            class="flourish-embed-iframe"
+            frameborder="0"
+            scrolling="no"
+            style="width: 100%; height: 600px"
+            sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          ></iframe>
           <div
-            is="script"
-            class="flourish-embed"
-            src="https://public.flourish.studio/resources/embed.js"
-            data-src="story/956920"
-          ></div>
+            style="
+              width: 100%!;
+              margin-top: 4px !important;
+              text-align: right !important;
+            "
+          >
+            <a
+              class="flourish-credit"
+              href="https://public.flourish.studio/story/956920/?utm_source=embed&utm_campaign=story/956920"
+              target="_top"
+              style="text-decoration: none !important"
+              ><img
+                alt="Made with Flourish"
+                src="https://public.flourish.studio/resources/made_with_flourish.svg"
+                style="
+                  width: 105px !important;
+                  height: 16px !important;
+                  border: none !important;
+                  margin: 0 !important;
+                "
+              />
+            </a>
+          </div>
           <p>
             O destaque da década foram as duas edições das Marchas das
             Margaridas. Ambas tiveram como causas principais a luta contra a
@@ -107,12 +134,39 @@
           <h2 class="content-subtitle my-10">
             Protestos virtuais e ações de solidariedade se destacam na pandemia
           </h2>
+          <iframe
+            src="https://flo.uri.sh/visualisation/7016857/embed"
+            title="Interactive or visual content"
+            class="flourish-embed-iframe"
+            frameborder="0"
+            scrolling="no"
+            style="width: 100%; height: 600px"
+            sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          ></iframe>
           <div
-            is="script"
-            class="flourish-embed"
-            src="https://public.flourish.studio/resources/embed.js"
-            data-src="visualisation/7016857"
-          ></div>
+            style="
+              width: 100%!;
+              margin-top: 4px !important;
+              text-align: right !important;
+            "
+          >
+            <a
+              class="flourish-credit"
+              href="https://public.flourish.studio/visualisation/7016857/?utm_source=embed&utm_campaign=visualisation/7016857"
+              target="_top"
+              style="text-decoration: none !important"
+              ><img
+                alt="Made with Flourish"
+                src="https://public.flourish.studio/resources/made_with_flourish.svg"
+                style="
+                  width: 105px !important;
+                  height: 16px !important;
+                  border: none !important;
+                  margin: 0 !important;
+                "
+              />
+            </a>
+          </div>
           <p>
             Nunca se registrou tantas ações de solidariedade como em 2020. Sem
             poder ir às ruas, a população rural trocou as marchas e romarias por
@@ -135,12 +189,39 @@
           <h2 class="content-subtitle my-10">
             O que inspira os protestos da população rural do seu Estado?
           </h2>
+          <iframe
+            src="https://flo.uri.sh/visualisation/6887296/embed"
+            title="Interactive or visual content"
+            class="flourish-embed-iframe"
+            frameborder="0"
+            scrolling="no"
+            style="width: 100%; height: 300px"
+            sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          ></iframe>
           <div
-            is="script"
-            class="flourish-embed"
-            src="https://public.flourish.studio/resources/embed.js"
-            data-src="visualisation/6887296"
-          ></div>
+            style="
+              width: 100%!;
+              margin-top: 4px !important;
+              text-align: right !important;
+            "
+          >
+            <a
+              class="flourish-credit"
+              href="https://public.flourish.studio/visualisation/6887296/?utm_source=embed&utm_campaign=visualisation/6887296"
+              target="_top"
+              style="text-decoration: none !important"
+              ><img
+                alt="Made with Flourish"
+                src="https://public.flourish.studio/resources/made_with_flourish.svg"
+                style="
+                  width: 105px !important;
+                  height: 16px !important;
+                  border: none !important;
+                  margin: 0 !important;
+                "
+              />
+            </a>
+          </div>
           <p>
             Na maioria dos Estados, as pautas mais presentes são a luta por
             justiça e contra o fim de violências direcionadas às mulheres, aos
@@ -169,47 +250,45 @@ export default {
       this.$router.push("/pnews");
       window.scrollTo(0, 0);
     },
-  }
-
+  },
 };
 </script>
 
 <style scoped>
+.wnews-sheet {
+  padding: 15rem;
+  background-color: #f8f8f8;
+}
 
-  .wnews-sheet {
-    padding: 15rem;
-    background-color: #f8f8f8;
-  }
+.cite {
+  font: 1.2rem "Libre Baskerville", serif;
+  color: #b5b5b5;
+}
 
-  .cite {
-    font: 1.2rem "Libre Baskerville", serif;
-    color: #b5b5b5;
-  }
+.big-quote {
+  font-size: 2rem;
+  color: #f8f50d;
+}
 
-  .big-quote {
-    font-size: 2rem;
-    color: #f8f50d;
-  }
+.wnews-banner {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  object-position: 50% 70%;
+  position: relative;
+  z-index: 0;
+}
 
-  .wnews-banner {
-    width: 100%;
-    height: 25rem;
-    object-fit: cover;
-    object-position: 50% 70%;
-    position: relative;
-    z-index: 0;
-  }
+.wnews-content {
+  text-align: justify;
+  color: #616161;
+  font: 1rem "Open Sans", sans-serif;
+  line-height: 1.6rem;
+}
 
-  .wnews-content {
-    text-align: justify;
-    color: #616161;
-    font: 1rem "Open Sans", sans-serif;
-    line-height: 1.6rem;
-  }
-
-  .content-subtitle {
-    color: #616161;
-    text-align: center;
-  }
-
+.content-subtitle {
+  font-size: 1.2rem;
+  color: #616161;
+  text-align: center;
+}
 </style>

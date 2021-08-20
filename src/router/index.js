@@ -49,7 +49,11 @@ const routes = [
   {
     path: '/wnews',
     name: 'WomanView',
-    component: () => import('../views/WomanView.vue')
+    component: () => import('../views/WomanView.vue'),
+    beforeEach(next){
+      Location.reload()
+      next()
+    }
   },
 
   {
@@ -67,7 +71,11 @@ const routes = [
   {
     path: '/francis',
     name: 'FrancisView',
-    component: () => import('../views/FrancisView.vue')
+    component: () => import('../views/FrancisView.vue'),
+    beforeRouteLeave(next){
+      Location.reload()
+      next()
+    }
   },
 
   {
