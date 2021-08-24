@@ -45,6 +45,12 @@ const routes = [
     name: 'StreetFacesView',
     component: () => import('../views/StreetFacesView.vue')
   },
+
+  {
+    path: '/tnews',
+    name: '10View',
+    component: () => import('../views/10View.vue')
+  },
   
   {
     path: '/wnews',

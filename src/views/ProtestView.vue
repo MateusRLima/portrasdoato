@@ -280,7 +280,7 @@
             >, produzido pela Artigo 19.
           </p>
           <p>
-            <a href="http://sdf" target="_blank"
+            <a href="https://portrasdoato.web.app/#/dayvid" target="_blank"
               >>> Conheça a história de Dayvid Bacelar e Wandaick Costa, que
               sofreram tentativa de destruição de provas em uma greve</a
             >

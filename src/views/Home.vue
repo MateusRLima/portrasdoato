@@ -43,7 +43,7 @@
               >
             </v-col>
             <v-col align-self="end" cols="3">
-              <p class="cite ma-0">
+              <p class="big-cite ma-0">
                 <span class="big-quote">“</span>A Justiça existe para permitir
                 que aqueles que não têm voz possam ser ouvidos. Mas, hoje, está
                 se tornando a ferramenta usada por essas pessoas poderosas para
@@ -106,6 +106,17 @@
                 @sendTo="goToPnews"
               ></card-news>
             </v-slide-item>
+            <v-slide-item light>
+               <card-news
+                title="10 anos de greves: brasileiros lutam por um salário digno"
+                subtitle="Uma década, três governos, uma pandemia."
+                readTime="8"
+                format="Expresso"
+                theme="Como ajudar"
+                imgName="materia5.jpg"
+                @sendTo="goToTnews"
+              ></card-news>
+            </v-slide-item>
           </v-slide-group>
         </v-container>
       </v-card>
@@ -146,6 +157,11 @@ export default {
 
     goToWnews() {
       this.$router.push("/wnews");
+      window.scrollTo(0, 0);
+    },
+
+    goToTnews() {
+      this.$router.push("/tnews");
       window.scrollTo(0, 0);
     },
   },
@@ -198,11 +214,13 @@ export default {
   font: 1rem "Open Sans", sans-serif;
 }
 
-.cite{
+.big-cite{
+  text-align: justify;
   color: #b5b5b5;
 }
 
 .big-quote {
+  font: 2rem "Libre Baskerville", serif;
   font-size: 2rem;
   color: #f8f50d;
 }
